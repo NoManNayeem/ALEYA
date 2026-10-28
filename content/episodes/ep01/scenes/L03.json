@@ -1,0 +1,1014 @@
+{
+  "id": "aleya.ep01.L03",
+  "version": 1,
+  "displayNameKey": "scene.L03.name",
+  "chapterKey": "chapter.L03",
+  "lightingPreset": {
+    "ambient": [
+      0.05,
+      0.055,
+      0.065
+    ],
+    "fogColor": [
+      0.07,
+      0.075,
+      0.085
+    ],
+    "fogDensity": 0.04,
+    "skyTop": [
+      0.025,
+      0.028,
+      0.035
+    ],
+    "skyBottom": [
+      0.1,
+      0.105,
+      0.115
+    ],
+    "moon": {
+      "color": [
+        0.55,
+        0.6,
+        0.72
+      ],
+      "intensity": 0.42,
+      "rot": [
+        40,
+        20,
+        0
+      ]
+    },
+    "rain": 1.0,
+    "lightning": [
+      8,
+      18
+    ],
+    "exposure": 1.15
+  },
+  "spawnPoints": [
+    {
+      "id": "L03.start",
+      "pos": [
+        1,
+        0.3,
+        0.2
+      ],
+      "facing": 1
+    },
+    {
+      "id": "L03.escape",
+      "pos": [
+        36,
+        0,
+        0.2
+      ],
+      "facing": 1
+    },
+    {
+      "id": "L03.bank",
+      "pos": [
+        62,
+        0.15,
+        0.3
+      ],
+      "facing": 1
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "L03.cp_start",
+      "spawn": "L03.start"
+    },
+    {
+      "id": "L03.cp_escape",
+      "spawn": "L03.escape"
+    },
+    {
+      "id": "L03.cp_bank",
+      "spawn": "L03.bank"
+    }
+  ],
+  "navLanes": [
+    {
+      "x0": -1,
+      "x1": 28,
+      "z0": -0.8,
+      "z1": 1.0,
+      "y0": 0.3,
+      "surface": "concrete"
+    },
+    {
+      "x0": 28,
+      "x1": 30,
+      "z0": -0.8,
+      "z1": 1.0,
+      "y0": 0.3,
+      "y1": 0.0,
+      "surface": "concrete"
+    },
+    {
+      "x0": 30,
+      "x1": 40,
+      "z0": -0.8,
+      "z1": 1.0,
+      "y0": 0.0,
+      "y1": 0.62,
+      "surface": "concrete"
+    },
+    {
+      "x0": 40,
+      "x1": 58,
+      "z0": -0.15,
+      "z1": 0.3,
+      "y0": 0.62,
+      "surface": "wood"
+    },
+    {
+      "x0": 58,
+      "x1": 60.5,
+      "z0": -0.4,
+      "z1": 0.8,
+      "y0": 0.62,
+      "y1": 0.15,
+      "surface": "mud"
+    },
+    {
+      "x0": 60.5,
+      "x1": 72,
+      "z0": -0.5,
+      "z1": 1.2,
+      "y0": 0.15,
+      "surface": "mud"
+    }
+  ],
+  "barriers": [
+    {
+      "id": "L03.b_flood",
+      "x": 28.3,
+      "until": {
+        "all": [
+          "L03.gate_solved"
+        ]
+      },
+      "messageKey": "line.L03.asha.water_blocked"
+    }
+  ],
+  "cameraRails": [
+    {
+      "x0": -10,
+      "x1": 39,
+      "offset": [
+        0,
+        1.85,
+        5.92
+      ],
+      "look": [
+        0.6,
+        1.0,
+        0
+      ],
+      "fov": 40
+    },
+    {
+      "x0": 39,
+      "x1": 60,
+      "offset": [
+        -2.2,
+        2.6,
+        7.4
+      ],
+      "look": [
+        -0.6,
+        1.0,
+        0
+      ],
+      "fov": 46
+    },
+    {
+      "x0": 60,
+      "x1": 80,
+      "offset": [
+        0,
+        1.67,
+        5.44
+      ],
+      "look": [
+        0.6,
+        1.0,
+        0
+      ],
+      "fov": 40
+    }
+  ],
+  "shots": [
+    {
+      "id": "L03.culvert_drain",
+      "kind": "Reveal",
+      "hold": true,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            29,
+            2.6,
+            6.5
+          ],
+          "target": [
+            33,
+            0.2,
+            0
+          ],
+          "fov": 44
+        },
+        {
+          "t": 5,
+          "pos": [
+            31,
+            3.8,
+            7.5
+          ],
+          "target": [
+            36,
+            0,
+            0
+          ],
+          "fov": 46
+        }
+      ]
+    },
+    {
+      "id": "L03.flooded_bridge",
+      "kind": "Chase",
+      "hold": true,
+      "shake": 0.04,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            47,
+            9.5,
+            12
+          ],
+          "target": [
+            48,
+            0,
+            0
+          ],
+          "fov": 50
+        },
+        {
+          "t": 3.2,
+          "pos": [
+            43,
+            7.2,
+            10.5
+          ],
+          "target": [
+            45,
+            0.4,
+            0
+          ],
+          "fov": 48
+        }
+      ]
+    }
+  ],
+  "audioZones": [
+    {
+      "id": "L03.bed",
+      "x0": -10,
+      "x1": 40,
+      "bed": "bed_embankment"
+    },
+    {
+      "id": "L03.bed2",
+      "x0": 40,
+      "x1": 80,
+      "bed": "bed_current"
+    }
+  ],
+  "soundEmitters": [
+    {
+      "id": "L03.current",
+      "cue": "loop_current",
+      "pos": [
+        48,
+        -0.3,
+        1
+      ],
+      "gain": 1
+    },
+    {
+      "id": "L03.culvert",
+      "cue": "loop_culvert",
+      "pos": [
+        24,
+        -0.2,
+        -1.8
+      ],
+      "gain": 0.8
+    },
+    {
+      "id": "L03.flood",
+      "cue": "loop_current",
+      "pos": [
+        34,
+        0.4,
+        0
+      ],
+      "gain": 0.7,
+      "when": {
+        "none": [
+          "L03.gate_solved"
+        ]
+      }
+    }
+  ],
+  "water": [
+    {
+      "y": -0.3,
+      "x0": -60,
+      "x1": 140,
+      "z0": -80,
+      "z1": -3.2
+    },
+    {
+      "y": -0.55,
+      "x0": -10,
+      "x1": 40,
+      "z0": 2.4,
+      "z1": 12
+    },
+    {
+      "y": 0.55,
+      "x0": 28.2,
+      "x1": 40,
+      "z0": -1.3,
+      "z1": 1.4,
+      "tag": "L03.flood"
+    },
+    {
+      "y": -0.35,
+      "x0": 39.5,
+      "x1": 59,
+      "z0": -3.4,
+      "z1": 12,
+      "tint": [
+        0.06,
+        0.07,
+        0.06
+      ]
+    }
+  ],
+  "props": [
+    {
+      "kind": "prefab",
+      "prefab": "distantShore",
+      "pos": [
+        0,
+        0,
+        -60
+      ],
+      "layer": "bg",
+      "params": {
+        "x0": -60,
+        "x1": 140,
+        "lights": 3,
+        "seed": 17
+      }
+    },
+    {
+      "kind": "box",
+      "pos": [
+        14,
+        -0.2,
+        0.1
+      ],
+      "scale": [
+        30,
+        1,
+        2.4
+      ],
+      "material": "concrete_wet"
+    },
+    {
+      "kind": "box",
+      "pos": [
+        14,
+        -0.6,
+        -2.2
+      ],
+      "scale": [
+        30,
+        1.6,
+        2.4
+      ],
+      "rot": [
+        -24,
+        0,
+        0
+      ],
+      "material": "mud_wet"
+    },
+    {
+      "kind": "box",
+      "pos": [
+        14,
+        -0.8,
+        2.6
+      ],
+      "scale": [
+        30,
+        1.2,
+        2.6
+      ],
+      "rot": [
+        20,
+        0,
+        0
+      ],
+      "material": "mud"
+    },
+    {
+      "kind": "box",
+      "pos": [
+        34,
+        -0.5,
+        0.1
+      ],
+      "scale": [
+        12,
+        1,
+        2.4
+      ],
+      "material": "concrete_wet"
+    },
+    {
+      "kind": "prefab",
+      "prefab": "culvert",
+      "pos": [
+        24,
+        0,
+        -1.9
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "chalkboard",
+      "pos": [
+        22.1,
+        0.9,
+        -1.25
+      ],
+      "params": {
+        "w": 0.9,
+        "h": 0.6,
+        "kind": "valves"
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "sign",
+      "pos": [
+        8,
+        1.7,
+        -1.5
+      ],
+      "textKey": "sign.L03.earthworks",
+      "params": {
+        "w": 2.6,
+        "h": 1.1,
+        "bg": "#e0c33b",
+        "fg": "#1b1b1b",
+        "post": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "sign",
+      "pos": [
+        27.8,
+        1.2,
+        -1.35
+      ],
+      "textKey": "sign.L03.danger",
+      "params": {
+        "w": 0.9,
+        "h": 0.6,
+        "bg": "#b3201a",
+        "fg": "#ffffff",
+        "post": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "sandbags",
+      "pos": [
+        4,
+        0.3,
+        -1.25
+      ],
+      "params": {
+        "length": 5
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "sandbags",
+      "pos": [
+        16,
+        0.3,
+        -1.25
+      ],
+      "params": {
+        "length": 4
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "sandbags",
+      "pos": [
+        37,
+        0.0,
+        -1.25
+      ],
+      "params": {
+        "length": 3
+      }
+    },
+    {
+      "kind": "box",
+      "pos": [
+        12,
+        0.15,
+        1.6
+      ],
+      "scale": [
+        1.8,
+        0.35,
+        1.1
+      ],
+      "rot": [
+        8,
+        25,
+        12
+      ],
+      "material": "concrete"
+    },
+    {
+      "kind": "box",
+      "pos": [
+        31,
+        -0.2,
+        1.7
+      ],
+      "scale": [
+        2.2,
+        0.4,
+        1.2
+      ],
+      "rot": [
+        -6,
+        -20,
+        18
+      ],
+      "material": "concrete"
+    },
+    {
+      "kind": "box",
+      "pos": [
+        39.3,
+        -0.5,
+        0.1
+      ],
+      "scale": [
+        1.2,
+        1.0,
+        2.6
+      ],
+      "rot": [
+        0,
+        0,
+        14
+      ],
+      "material": "concrete"
+    },
+    {
+      "kind": "box",
+      "pos": [
+        59.5,
+        -0.6,
+        0.2
+      ],
+      "scale": [
+        3,
+        1.4,
+        3
+      ],
+      "rot": [
+        0,
+        0,
+        -10
+      ],
+      "material": "mud_wet"
+    },
+    {
+      "kind": "box",
+      "pos": [
+        66,
+        -0.35,
+        0.3
+      ],
+      "scale": [
+        13,
+        1,
+        4
+      ],
+      "material": "mud_wet"
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        64,
+        -0.1,
+        -2.2
+      ],
+      "params": {
+        "width": 12,
+        "depth": 2,
+        "count": 140
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        66,
+        -0.2,
+        3.6
+      ],
+      "layer": "fg",
+      "params": {
+        "width": 10,
+        "depth": 1.5,
+        "count": 80
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        6,
+        -0.4,
+        3.8
+      ],
+      "layer": "fg",
+      "params": {
+        "width": 8,
+        "depth": 1.4,
+        "count": 60
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "tree",
+      "pos": [
+        70,
+        0,
+        -6
+      ],
+      "layer": "bg",
+      "params": {
+        "height": 8,
+        "radius": 4
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "palm",
+      "pos": [
+        -2,
+        0,
+        -7
+      ],
+      "layer": "bg",
+      "params": {
+        "height": 10
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "fgPost",
+      "pos": [
+        18,
+        -0.4,
+        4.0
+      ],
+      "layer": "fg",
+      "params": {
+        "height": 4.5
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "fgPost",
+      "pos": [
+        50,
+        -0.4,
+        3.6
+      ],
+      "layer": "fg",
+      "params": {
+        "height": 5.5
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "lampPost",
+      "pos": [
+        2,
+        0.3,
+        -1.2
+      ],
+      "params": {
+        "height": 3.4,
+        "broken": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bambooBridge",
+      "pos": [
+        41,
+        0.62,
+        0.05
+      ],
+      "tag": "L03.bridge",
+      "params": {
+        "length": 2.05,
+        "collapseAt": 41
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bambooBridge",
+      "pos": [
+        43,
+        0.62,
+        0.05
+      ],
+      "tag": "L03.bridge",
+      "params": {
+        "length": 2.05,
+        "collapseAt": 43
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bambooBridge",
+      "pos": [
+        45,
+        0.62,
+        0.05
+      ],
+      "tag": "L03.bridge",
+      "params": {
+        "length": 2.05,
+        "collapseAt": 45
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bambooBridge",
+      "pos": [
+        47,
+        0.62,
+        0.05
+      ],
+      "tag": "L03.bridge",
+      "params": {
+        "length": 2.05,
+        "collapseAt": 47
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bambooBridge",
+      "pos": [
+        49,
+        0.62,
+        0.05
+      ],
+      "tag": "L03.bridge",
+      "params": {
+        "length": 2.05,
+        "collapseAt": 49
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bambooBridge",
+      "pos": [
+        51,
+        0.62,
+        0.05
+      ],
+      "tag": "L03.bridge",
+      "params": {
+        "length": 2.05,
+        "collapseAt": 51
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bambooBridge",
+      "pos": [
+        53,
+        0.62,
+        0.05
+      ],
+      "tag": "L03.bridge",
+      "params": {
+        "length": 2.05,
+        "collapseAt": 53
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bambooBridge",
+      "pos": [
+        55,
+        0.62,
+        0.05
+      ],
+      "tag": "L03.bridge",
+      "params": {
+        "length": 2.05,
+        "collapseAt": 55
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bambooBridge",
+      "pos": [
+        57,
+        0.62,
+        0.05
+      ],
+      "tag": "L03.bridge",
+      "params": {
+        "length": 2.05,
+        "collapseAt": 57
+      }
+    }
+  ],
+  "lights": [
+    {
+      "id": "L03.worklamp",
+      "pos": [
+        24.5,
+        2.2,
+        -1.0
+      ],
+      "color": [
+        1,
+        0.85,
+        0.6
+      ],
+      "intensity": 1.6,
+      "range": 6,
+      "flicker": 0.25,
+      "shadows": true
+    },
+    {
+      "id": "L03.far",
+      "pos": [
+        64,
+        3,
+        -1
+      ],
+      "color": [
+        0.7,
+        0.8,
+        1
+      ],
+      "intensity": 0.8,
+      "range": 9,
+      "flicker": 0.1
+    }
+  ],
+  "interactables": [
+    {
+      "id": "L03.sign",
+      "pos": [
+        8,
+        1.4,
+        -1.2
+      ],
+      "verbKey": "verb.read",
+      "objectKey": "obj.earthworks_sign",
+      "sequence": "L03.sign"
+    },
+    {
+      "id": "L03.chalk",
+      "pos": [
+        22.1,
+        0.9,
+        -0.95
+      ],
+      "verbKey": "verb.read",
+      "objectKey": "obj.chalk",
+      "sequence": "L03.chalk"
+    },
+    {
+      "id": "L03.valves",
+      "pos": [
+        25,
+        0.9,
+        -1.0
+      ],
+      "verbKey": "verb.operate",
+      "objectKey": "obj.valves",
+      "sequence": "L03.valves",
+      "when": {
+        "none": [
+          "L03.gate_solved"
+        ]
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "id": "L03.t_valves",
+      "x0": 18,
+      "x1": 20,
+      "sequence": "L03.mira_valves"
+    },
+    {
+      "id": "L03.t_chase",
+      "x0": 41,
+      "x1": 43,
+      "sequence": "L03.chase",
+      "when": {
+        "all": [
+          "L03.gate_solved"
+        ],
+        "none": [
+          "L03.escaped"
+        ]
+      }
+    },
+    {
+      "id": "L03.t_exit",
+      "x0": 70,
+      "x1": 72,
+      "sequence": "L03.exit",
+      "when": {
+        "all": [
+          "L03.escaped"
+        ]
+      }
+    }
+  ],
+  "threats": [
+    {
+      "id": "L03.watcher",
+      "kind": "pursuit",
+      "spawn": [
+        36.5,
+        0.2,
+        0.2
+      ],
+      "speed": 0.9,
+      "telegraphSeconds": 2.2,
+      "safeX": 60,
+      "failCheckpoint": "L03.cp_escape",
+      "onEscape": "L03.escaped",
+      "collapseTag": "L03.bridge",
+      "activeWhen": {
+        "all": [
+          "L03.chase_armed"
+        ],
+        "none": [
+          "L03.escaped"
+        ]
+      }
+    }
+  ],
+  "puzzleIds": [
+    "P4.floodgate"
+  ],
+  "questNodes": [
+    "q.L03.culvert",
+    "q.L03.cross",
+    "q.L03.leave"
+  ],
+  "enterSequence": "L03.enter",
+  "criticalBundle": [
+    "proc:materials",
+    "proc:rain",
+    "proc:audio"
+  ],
+  "memoryBudgetMb": 240
+}

@@ -1,0 +1,227 @@
+[
+  {
+    "id": "L03.enter",
+    "skippable": true,
+    "steps": [
+      {
+        "if": {
+          "all": [
+            "L03.entered"
+          ]
+        },
+        "then": [],
+        "else": [
+          {
+            "fade": "in",
+            "duration": 1.5
+          },
+          {
+            "chapter": "chapter.L03"
+          },
+          {
+            "say": "L03.asha.enter"
+          },
+          {
+            "set": "L03.entered"
+          },
+          {
+            "checkpoint": "L03.cp_start"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L03.sign",
+    "steps": [
+      {
+        "document": "doc.earthworks_sign"
+      },
+      {
+        "clue": "clue.earthworks_sign"
+      },
+      {
+        "say": "L03.asha.sign"
+      }
+    ]
+  },
+  {
+    "id": "L03.chalk",
+    "steps": [
+      {
+        "document": "doc.chalk"
+      },
+      {
+        "clue": "clue.chalk"
+      },
+      {
+        "say": "L03.asha.chalk"
+      }
+    ]
+  },
+  {
+    "id": "L03.mira_valves",
+    "steps": [
+      {
+        "sfx": "radio_click"
+      },
+      {
+        "say": "L03.mira.valves"
+      }
+    ]
+  },
+  {
+    "id": "L03.valves",
+    "steps": [
+      {
+        "puzzle": "P4.floodgate"
+      },
+      {
+        "if": {
+          "all": [
+            "L03.gate_solved"
+          ]
+        },
+        "then": [
+          {
+            "playerState": "Cutscene"
+          },
+          {
+            "shot": "L03.culvert_drain"
+          },
+          {
+            "sfx": "sluice"
+          },
+          {
+            "say": "L03.caption.sluice"
+          },
+          {
+            "water": "L03.flood",
+            "y": -0.7,
+            "duration": 4
+          },
+          {
+            "wait": 2.5
+          },
+          {
+            "say": "L03.asha.draining"
+          },
+          {
+            "follow": true
+          },
+          {
+            "playerState": "Idle"
+          },
+          {
+            "checkpoint": "L03.cp_escape"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L03.chase",
+    "steps": [
+      {
+        "playerState": "Cutscene"
+      },
+      {
+        "shot": "L03.flooded_bridge"
+      },
+      {
+        "say": "L03.asha.bridge"
+      },
+      {
+        "quake": 0.7
+      },
+      {
+        "sfx": "collapse",
+        "at": [
+          34,
+          0,
+          0
+        ]
+      },
+      {
+        "say": "L03.caption.crack"
+      },
+      {
+        "music": "chase_pulse"
+      },
+      {
+        "follow": true
+      },
+      {
+        "playerState": "Idle"
+      },
+      {
+        "set": "L03.chase_armed"
+      },
+      {
+        "sfx": "watcher_tele",
+        "at": [
+          31,
+          1,
+          0
+        ]
+      },
+      {
+        "say": "L03.caption.watcher"
+      },
+      {
+        "set": "tip.run"
+      },
+      {
+        "say": "L03.asha.run"
+      }
+    ]
+  },
+  {
+    "id": "L03.escaped",
+    "steps": [
+      {
+        "music": null
+      },
+      {
+        "set": "L03.escaped"
+      },
+      {
+        "clue": "clue.watcher"
+      },
+      {
+        "checkpoint": "L03.cp_bank"
+      },
+      {
+        "say": "L03.asha.escaped"
+      },
+      {
+        "sfx": "radio_click"
+      },
+      {
+        "say": "L03.mira.escaped1"
+      },
+      {
+        "say": "L03.asha.escaped2"
+      },
+      {
+        "say": "L03.mira.escaped3"
+      }
+    ]
+  },
+  {
+    "id": "L03.exit",
+    "steps": [
+      {
+        "set": "L03.exit"
+      },
+      {
+        "fade": "out",
+        "duration": 1.2
+      },
+      {
+        "loadScene": "aleya.ep01.L04",
+        "spawn": "L04.start"
+      }
+    ]
+  }
+]

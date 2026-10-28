@@ -1,0 +1,230 @@
+[
+  {
+    "id": "L04.enter",
+    "skippable": true,
+    "steps": [
+      {
+        "if": {
+          "all": [
+            "L04.entered"
+          ]
+        },
+        "then": [],
+        "else": [
+          {
+            "playerState": "Cutscene"
+          },
+          {
+            "shot": "L04.lights_wide"
+          },
+          {
+            "fade": "in",
+            "duration": 2
+          },
+          {
+            "chapter": "chapter.L04"
+          },
+          {
+            "music": "near_silence"
+          },
+          {
+            "say": "L04.asha.enter"
+          },
+          {
+            "say": "L04.caption.lights"
+          },
+          {
+            "say": "L04.asha.aleya"
+          },
+          {
+            "set": "L04.entered"
+          },
+          {
+            "if": {
+              "none": [
+                "has.item.lantern"
+              ]
+            },
+            "then": [
+              {
+                "item": "item.lantern"
+              }
+            ]
+          },
+          {
+            "follow": true
+          },
+          {
+            "playerState": "Idle"
+          },
+          {
+            "checkpoint": "L04.cp_start"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L04.boat",
+    "steps": [
+      {
+        "clue": "clue.karim_lantern"
+      },
+      {
+        "say": "L04.asha.boat"
+      }
+    ]
+  },
+  {
+    "id": "L04.shrine",
+    "steps": [
+      {
+        "sfx": "camera_shutter"
+      },
+      {
+        "document": "doc.shrine"
+      },
+      {
+        "clue": "clue.shrine"
+      },
+      {
+        "say": "L04.asha.shrine"
+      },
+      {
+        "say": "L04.asha.shrine2"
+      }
+    ]
+  },
+  {
+    "id": "L04.watch",
+    "steps": [
+      {
+        "set": "L04.watch_armed"
+      },
+      {
+        "checkpoint": "L04.cp_watch"
+      },
+      {
+        "sfx": "radio_click"
+      },
+      {
+        "say": "L04.mira.lookout"
+      },
+      {
+        "set": "tip.hide"
+      }
+    ]
+  },
+  {
+    "id": "L04.passed",
+    "steps": [
+      {
+        "set": "L04.passed_watch"
+      },
+      {
+        "say": "L04.asha.passed"
+      },
+      {
+        "checkpoint": "L04.cp_creek"
+      }
+    ]
+  },
+  {
+    "id": "L04.creek",
+    "steps": [
+      {
+        "say": "L04.asha.pattern"
+      }
+    ]
+  },
+  {
+    "id": "L04.signal",
+    "steps": [
+      {
+        "shot": "L04.lights_deep"
+      },
+      {
+        "puzzle": "P5.lantern"
+      },
+      {
+        "if": {
+          "all": [
+            "L04.lights_solved"
+          ]
+        },
+        "then": [
+          {
+            "playerState": "Cutscene"
+          },
+          {
+            "music": "sustained_tone"
+          },
+          {
+            "say": "L04.caption.answer"
+          },
+          {
+            "clue": "clue.lights"
+          },
+          {
+            "wait": 2.5
+          },
+          {
+            "say": "L04.asha.answer"
+          },
+          {
+            "follow": true
+          },
+          {
+            "playerState": "Idle"
+          },
+          {
+            "checkpoint": "L04.cp_creek"
+          }
+        ],
+        "else": [
+          {
+            "follow": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L04.hull",
+    "skippable": true,
+    "steps": [
+      {
+        "playerState": "Cutscene"
+      },
+      {
+        "shot": "L04.hull"
+      },
+      {
+        "wait": 2.5
+      },
+      {
+        "say": "L04.asha.hull"
+      },
+      {
+        "sfx": "radio_click"
+      },
+      {
+        "say": "L04.mira.hull"
+      },
+      {
+        "wait": 1
+      },
+      {
+        "set": "L04.exit"
+      },
+      {
+        "fade": "out",
+        "duration": 1.5
+      },
+      {
+        "loadScene": "aleya.ep01.L05",
+        "spawn": "L05.start"
+      }
+    ]
+  }
+]

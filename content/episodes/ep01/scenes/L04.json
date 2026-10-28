@@ -1,0 +1,928 @@
+{
+  "id": "aleya.ep01.L04",
+  "version": 1,
+  "displayNameKey": "scene.L04.name",
+  "chapterKey": "chapter.L04",
+  "lightingPreset": {
+    "ambient": [
+      0.04,
+      0.055,
+      0.055
+    ],
+    "fogColor": [
+      0.06,
+      0.075,
+      0.075
+    ],
+    "fogDensity": 0.05,
+    "skyTop": [
+      0.02,
+      0.03,
+      0.03
+    ],
+    "skyBottom": [
+      0.08,
+      0.1,
+      0.1
+    ],
+    "moon": {
+      "color": [
+        0.55,
+        0.7,
+        0.72
+      ],
+      "intensity": 0.3,
+      "rot": [
+        55,
+        -10,
+        0
+      ]
+    },
+    "rain": 0.4,
+    "lightning": null,
+    "exposure": 1.25
+  },
+  "spawnPoints": [
+    {
+      "id": "L04.start",
+      "pos": [
+        1,
+        0,
+        0.3
+      ],
+      "facing": 1
+    },
+    {
+      "id": "L04.watch",
+      "pos": [
+        24.5,
+        0,
+        0.3
+      ],
+      "facing": 1
+    },
+    {
+      "id": "L04.creek",
+      "pos": [
+        50,
+        0,
+        0.3
+      ],
+      "facing": 1
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "L04.cp_start",
+      "spawn": "L04.start"
+    },
+    {
+      "id": "L04.cp_watch",
+      "spawn": "L04.watch"
+    },
+    {
+      "id": "L04.cp_creek",
+      "spawn": "L04.creek"
+    }
+  ],
+  "navLanes": [
+    {
+      "x0": -1,
+      "x1": 68,
+      "z0": -0.7,
+      "z1": 1.4,
+      "y0": 0,
+      "surface": "mud"
+    }
+  ],
+  "barriers": [
+    {
+      "id": "L04.b_creek",
+      "x": 57.5,
+      "until": {
+        "all": [
+          "L04.lights_solved"
+        ]
+      },
+      "messageKey": "barrier.L04.creek"
+    }
+  ],
+  "cameraRails": [
+    {
+      "x0": -10,
+      "x1": 27,
+      "offset": [
+        0,
+        1.67,
+        5.76
+      ],
+      "look": [
+        0.6,
+        1.0,
+        -0.5
+      ],
+      "fov": 40
+    },
+    {
+      "x0": 27,
+      "x1": 48,
+      "offset": [
+        0,
+        2.29,
+        6.72
+      ],
+      "look": [
+        0.4,
+        1.0,
+        -1.2
+      ],
+      "fov": 40
+    },
+    {
+      "x0": 48,
+      "x1": 80,
+      "offset": [
+        0,
+        1.58,
+        5.6
+      ],
+      "look": [
+        0.6,
+        1.1,
+        -1
+      ],
+      "fov": 40
+    }
+  ],
+  "shots": [
+    {
+      "id": "L04.lights_wide",
+      "kind": "Establishing",
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            -4,
+            1.6,
+            6
+          ],
+          "target": [
+            8,
+            0.6,
+            -20
+          ],
+          "fov": 40
+        },
+        {
+          "t": 6,
+          "pos": [
+            -1,
+            1.5,
+            6.5
+          ],
+          "target": [
+            6,
+            0.8,
+            -14
+          ],
+          "fov": 38
+        }
+      ]
+    },
+    {
+      "id": "L04.lights_deep",
+      "kind": "Reveal",
+      "hold": true,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            55,
+            1.35,
+            5.2
+          ],
+          "target": [
+            56,
+            0.6,
+            -22
+          ],
+          "fov": 34
+        },
+        {
+          "t": 8,
+          "pos": [
+            55.2,
+            1.38,
+            5.0
+          ],
+          "target": [
+            56,
+            0.6,
+            -22
+          ],
+          "fov": 33
+        }
+      ]
+    },
+    {
+      "id": "L04.hull",
+      "kind": "Reveal",
+      "hold": true,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            62,
+            1.5,
+            5
+          ],
+          "target": [
+            70,
+            1,
+            -20
+          ],
+          "fov": 38
+        },
+        {
+          "t": 7,
+          "pos": [
+            64,
+            1.7,
+            5.4
+          ],
+          "target": [
+            84,
+            1.5,
+            -26
+          ],
+          "fov": 32
+        }
+      ]
+    }
+  ],
+  "audioZones": [
+    {
+      "id": "L04.bed",
+      "x0": -10,
+      "x1": 80,
+      "bed": "bed_creek"
+    }
+  ],
+  "soundEmitters": [
+    {
+      "id": "L04.frogs",
+      "cue": "loop_frogs",
+      "pos": [
+        16,
+        0,
+        -3
+      ],
+      "gain": 0.8
+    },
+    {
+      "id": "L04.frogs2",
+      "cue": "loop_frogs",
+      "pos": [
+        58,
+        0,
+        -3
+      ],
+      "gain": 0.7
+    },
+    {
+      "id": "L04.pulse",
+      "cue": "loop_pulse",
+      "pos": [
+        56,
+        0.5,
+        -20
+      ],
+      "gain": 0.5,
+      "when": {
+        "none": [
+          "L04.lights_solved"
+        ]
+      }
+    }
+  ],
+  "water": [
+    {
+      "y": -0.25,
+      "x0": -60,
+      "x1": 160,
+      "z0": -90,
+      "z1": -1.6,
+      "tint": [
+        0.04,
+        0.06,
+        0.055
+      ]
+    },
+    {
+      "y": -0.35,
+      "x0": -60,
+      "x1": 160,
+      "z0": 2.3,
+      "z1": 14,
+      "tint": [
+        0.04,
+        0.06,
+        0.055
+      ]
+    }
+  ],
+  "props": [
+    {
+      "kind": "prefab",
+      "prefab": "distantShore",
+      "pos": [
+        0,
+        0,
+        -70
+      ],
+      "layer": "bg",
+      "params": {
+        "x0": -60,
+        "x1": 160,
+        "lights": 0,
+        "seed": 23,
+        "mangrove": true
+      }
+    },
+    {
+      "kind": "box",
+      "pos": [
+        33,
+        -0.45,
+        0.4
+      ],
+      "scale": [
+        72,
+        0.9,
+        4
+      ],
+      "material": "mud_wet"
+    },
+    {
+      "kind": "prefab",
+      "prefab": "boat",
+      "pos": [
+        9.5,
+        -0.15,
+        -1.9
+      ],
+      "rot": [
+        0,
+        12,
+        180
+      ],
+      "params": {
+        "length": 5.5,
+        "overturned": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "lantern",
+      "pos": [
+        10.6,
+        0.12,
+        -1.05
+      ],
+      "rot": [
+        0,
+        0,
+        80
+      ],
+      "params": {
+        "old": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "shrine",
+      "pos": [
+        20.5,
+        0,
+        -1.7
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "lookout",
+      "pos": [
+        37,
+        -0.3,
+        -6.5
+      ],
+      "params": {
+        "height": 6
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "creekLights",
+      "pos": [
+        56,
+        0,
+        -20
+      ],
+      "params": {
+        "spacing": 6,
+        "driftFlag": "L04.lights_solved"
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "ferry",
+      "pos": [
+        86,
+        -0.6,
+        -26
+      ],
+      "rot": [
+        0,
+        -18,
+        3
+      ],
+      "layer": "bg",
+      "when": {
+        "all": [
+          "L04.lights_solved"
+        ]
+      },
+      "params": {
+        "length": 44,
+        "distant": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "tree",
+      "pos": [
+        3,
+        0,
+        -7
+      ],
+      "layer": "bg",
+      "params": {
+        "height": 7,
+        "radius": 3.5,
+        "mangrove": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "tree",
+      "pos": [
+        26,
+        0,
+        -9
+      ],
+      "layer": "bg",
+      "params": {
+        "height": 8,
+        "radius": 4,
+        "mangrove": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "tree",
+      "pos": [
+        49,
+        0,
+        -8
+      ],
+      "layer": "bg",
+      "params": {
+        "height": 7.5,
+        "radius": 3.8,
+        "mangrove": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "fgPost",
+      "pos": [
+        14,
+        -0.4,
+        3.6
+      ],
+      "layer": "fg",
+      "params": {
+        "height": 4,
+        "bamboo": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "fgPost",
+      "pos": [
+        52,
+        -0.4,
+        3.8
+      ],
+      "layer": "fg",
+      "params": {
+        "height": 4.5,
+        "bamboo": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        30.25,
+        -0.05,
+        0.3
+      ],
+      "params": {
+        "width": 2.5,
+        "depth": 2.2,
+        "count": 120,
+        "tall": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        35.25,
+        -0.05,
+        0.3
+      ],
+      "params": {
+        "width": 2.5,
+        "depth": 2.2,
+        "count": 120,
+        "tall": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        40.75,
+        -0.05,
+        0.3
+      ],
+      "params": {
+        "width": 2.5,
+        "depth": 2.2,
+        "count": 120,
+        "tall": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        45.25,
+        -0.05,
+        0.3
+      ],
+      "params": {
+        "width": 2.5,
+        "depth": 2.2,
+        "count": 120,
+        "tall": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        2,
+        -0.1,
+        -1.9
+      ],
+      "params": {
+        "width": 5,
+        "depth": 1.4,
+        "count": 70
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        8,
+        -0.1,
+        -1.9
+      ],
+      "params": {
+        "width": 5,
+        "depth": 1.4,
+        "count": 70
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        16,
+        -0.1,
+        -1.9
+      ],
+      "params": {
+        "width": 5,
+        "depth": 1.4,
+        "count": 70
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        24,
+        -0.1,
+        -1.9
+      ],
+      "params": {
+        "width": 5,
+        "depth": 1.4,
+        "count": 70
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        50,
+        -0.1,
+        -1.9
+      ],
+      "params": {
+        "width": 5,
+        "depth": 1.4,
+        "count": 70
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        60,
+        -0.1,
+        -1.9
+      ],
+      "params": {
+        "width": 5,
+        "depth": 1.4,
+        "count": 70
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        66,
+        -0.1,
+        -1.9
+      ],
+      "params": {
+        "width": 5,
+        "depth": 1.4,
+        "count": 70
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        5,
+        -0.4,
+        3.4
+      ],
+      "layer": "fg",
+      "params": {
+        "width": 7,
+        "depth": 1.4,
+        "count": 70
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        22,
+        -0.4,
+        3.4
+      ],
+      "layer": "fg",
+      "params": {
+        "width": 7,
+        "depth": 1.4,
+        "count": 70
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        38,
+        -0.4,
+        3.4
+      ],
+      "layer": "fg",
+      "params": {
+        "width": 7,
+        "depth": 1.4,
+        "count": 70
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        58,
+        -0.4,
+        3.4
+      ],
+      "layer": "fg",
+      "params": {
+        "width": 7,
+        "depth": 1.4,
+        "count": 70
+      }
+    }
+  ],
+  "lights": [
+    {
+      "id": "L04.boatglow",
+      "pos": [
+        10.4,
+        0.5,
+        -0.6
+      ],
+      "color": [
+        0.6,
+        0.8,
+        1
+      ],
+      "intensity": 0.35,
+      "range": 3,
+      "flicker": 0.2
+    },
+    {
+      "id": "L04.shrine",
+      "pos": [
+        20.5,
+        0.6,
+        -1.2
+      ],
+      "color": [
+        1,
+        0.6,
+        0.25
+      ],
+      "intensity": 0.9,
+      "range": 3.5,
+      "flicker": 0.45
+    }
+  ],
+  "interactables": [
+    {
+      "id": "L04.boat",
+      "pos": [
+        10.4,
+        0.4,
+        -0.7
+      ],
+      "verbKey": "verb.inspect",
+      "objectKey": "obj.overturned_boat",
+      "sequence": "L04.boat",
+      "once": true
+    },
+    {
+      "id": "L04.shrine",
+      "pos": [
+        20.5,
+        0.7,
+        -1.2
+      ],
+      "verbKey": "verb.photograph",
+      "objectKey": "obj.shrine",
+      "sequence": "L04.shrine",
+      "once": true,
+      "optional": true
+    },
+    {
+      "id": "L04.signal",
+      "pos": [
+        55.5,
+        0.9,
+        -0.4
+      ],
+      "verbKey": "verb.signal",
+      "objectKey": "obj.lights",
+      "sequence": "L04.signal",
+      "when": {
+        "all": [
+          "L04.passed_watch"
+        ],
+        "none": [
+          "L04.lights_solved"
+        ]
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "id": "L04.t_watch",
+      "x0": 23.5,
+      "x1": 26,
+      "sequence": "L04.watch",
+      "when": {
+        "none": [
+          "L04.passed_watch"
+        ]
+      }
+    },
+    {
+      "id": "L04.t_creek",
+      "x0": 52,
+      "x1": 54,
+      "sequence": "L04.creek",
+      "when": {
+        "all": [
+          "L04.passed_watch"
+        ]
+      }
+    },
+    {
+      "id": "L04.t_hull",
+      "x0": 61,
+      "x1": 63,
+      "sequence": "L04.hull",
+      "when": {
+        "all": [
+          "L04.lights_solved"
+        ]
+      }
+    }
+  ],
+  "threats": [
+    {
+      "id": "L04.watcher",
+      "kind": "patrol",
+      "spawn": [
+        37,
+        5.6,
+        -6.5
+      ],
+      "telegraphSeconds": 2.0,
+      "patrol": {
+        "x0": 27.5,
+        "x1": 47.5,
+        "lookSeconds": 4.5,
+        "restSeconds": 3.5
+      },
+      "safeX": 48,
+      "failCheckpoint": "L04.cp_watch",
+      "onEscape": "L04.passed",
+      "activeWhen": {
+        "all": [
+          "L04.watch_armed"
+        ],
+        "none": [
+          "L04.passed_watch"
+        ]
+      }
+    }
+  ],
+  "hideZones": [
+    {
+      "x0": 29,
+      "x1": 31.5
+    },
+    {
+      "x0": 34,
+      "x1": 36.5
+    },
+    {
+      "x0": 39.5,
+      "x1": 42
+    },
+    {
+      "x0": 44,
+      "x1": 46.5
+    }
+  ],
+  "puzzleIds": [
+    "P5.lantern"
+  ],
+  "questNodes": [
+    "q.L04.reeds",
+    "q.L04.signal",
+    "q.L04.follow"
+  ],
+  "enterSequence": "L04.enter",
+  "criticalBundle": [
+    "proc:materials",
+    "proc:rain",
+    "proc:audio"
+  ],
+  "memoryBudgetMb": 240
+}

@@ -1,0 +1,312 @@
+[
+  {
+    "id": "q.L01.lantern",
+    "sceneId": "aleya.ep01.L01",
+    "objectiveKey": "obj.L01.lantern",
+    "activeWhen": {},
+    "doneWhen": {
+      "all": [
+        "has.item.lantern"
+      ]
+    }
+  },
+  {
+    "id": "q.L01.radio",
+    "sceneId": "aleya.ep01.L01",
+    "objectiveKey": "obj.L01.radio",
+    "activeWhen": {
+      "all": [
+        "has.item.lantern"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L01.mira_called"
+      ]
+    }
+  },
+  {
+    "id": "q.L01.power",
+    "sceneId": "aleya.ep01.L01",
+    "objectiveKey": "obj.L01.power",
+    "activeWhen": {
+      "all": [
+        "L01.mira_called"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L01.power_on"
+      ]
+    }
+  },
+  {
+    "id": "q.L01.leave",
+    "sceneId": "aleya.ep01.L01",
+    "objectiveKey": "obj.L01.leave",
+    "activeWhen": {
+      "all": [
+        "L01.power_on"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L01.exit"
+      ]
+    }
+  },
+  {
+    "id": "q.L02.ledger",
+    "sceneId": "aleya.ep01.L02",
+    "objectiveKey": "obj.L02.ledger",
+    "activeWhen": {},
+    "doneWhen": {
+      "all": [
+        "L02.ledger_found"
+      ]
+    }
+  },
+  {
+    "id": "q.L02.restore",
+    "sceneId": "aleya.ep01.L02",
+    "objectiveKey": "obj.L02.restore",
+    "activeWhen": {
+      "all": [
+        "L02.ledger_found"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L02.ledger_solved"
+      ]
+    }
+  },
+  {
+    "id": "q.L02.signal",
+    "sceneId": "aleya.ep01.L02",
+    "objectiveKey": "obj.L02.signal",
+    "activeWhen": {
+      "all": [
+        "L02.ledger_solved"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L02.radio_solved"
+      ]
+    }
+  },
+  {
+    "id": "q.L02.hiding",
+    "sceneId": "aleya.ep01.L02",
+    "objectiveKey": "obj.L02.hiding",
+    "activeWhen": {
+      "all": [
+        "L02.radio_solved"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L02.map_found"
+      ]
+    }
+  },
+  {
+    "id": "q.L02.leave",
+    "sceneId": "aleya.ep01.L02",
+    "objectiveKey": "obj.L02.leave",
+    "activeWhen": {
+      "all": [
+        "L02.map_found"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L02.exit"
+      ]
+    }
+  },
+  {
+    "id": "q.L03.culvert",
+    "sceneId": "aleya.ep01.L03",
+    "objectiveKey": "obj.L03.culvert",
+    "activeWhen": {},
+    "doneWhen": {
+      "all": [
+        "L03.gate_solved"
+      ]
+    }
+  },
+  {
+    "id": "q.L03.cross",
+    "sceneId": "aleya.ep01.L03",
+    "objectiveKey": "obj.L03.cross",
+    "activeWhen": {
+      "all": [
+        "L03.gate_solved"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L03.escaped"
+      ]
+    }
+  },
+  {
+    "id": "q.L03.leave",
+    "sceneId": "aleya.ep01.L03",
+    "objectiveKey": "obj.L03.leave",
+    "activeWhen": {
+      "all": [
+        "L03.escaped"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L03.exit"
+      ]
+    }
+  },
+  {
+    "id": "q.L04.reeds",
+    "sceneId": "aleya.ep01.L04",
+    "objectiveKey": "obj.L04.reeds",
+    "activeWhen": {},
+    "doneWhen": {
+      "all": [
+        "L04.passed_watch"
+      ]
+    }
+  },
+  {
+    "id": "q.L04.signal",
+    "sceneId": "aleya.ep01.L04",
+    "objectiveKey": "obj.L04.signal",
+    "activeWhen": {
+      "all": [
+        "L04.passed_watch"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L04.lights_solved"
+      ]
+    }
+  },
+  {
+    "id": "q.L04.follow",
+    "sceneId": "aleya.ep01.L04",
+    "objectiveKey": "obj.L04.follow",
+    "activeWhen": {
+      "all": [
+        "L04.lights_solved"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L04.exit"
+      ]
+    }
+  },
+  {
+    "id": "q.L05.board",
+    "sceneId": "aleya.ep01.L05",
+    "objectiveKey": "obj.L05.board",
+    "activeWhen": {},
+    "doneWhen": {
+      "all": [
+        "L05.boarded"
+      ]
+    }
+  },
+  {
+    "id": "q.L05.search",
+    "sceneId": "aleya.ep01.L05",
+    "objectiveKey": "obj.L05.search",
+    "activeWhen": {
+      "all": [
+        "L05.boarded"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L05.clues_ready"
+      ]
+    }
+  },
+  {
+    "id": "q.L05.reconstruct",
+    "sceneId": "aleya.ep01.L05",
+    "objectiveKey": "obj.L05.reconstruct",
+    "activeWhen": {
+      "all": [
+        "L05.clues_ready"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L05.reconstructed"
+      ]
+    }
+  },
+  {
+    "id": "q.L05.wheelhouse",
+    "sceneId": "aleya.ep01.L05",
+    "objectiveKey": "obj.L05.wheelhouse",
+    "activeWhen": {
+      "all": [
+        "L05.reconstructed"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L05.lock_solved"
+      ]
+    }
+  },
+  {
+    "id": "q.L05.record",
+    "sceneId": "aleya.ep01.L05",
+    "objectiveKey": "obj.L05.record",
+    "activeWhen": {
+      "all": [
+        "L05.lock_solved"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L05.record_heard"
+      ]
+    }
+  },
+  {
+    "id": "q.L05.escape",
+    "sceneId": "aleya.ep01.L05",
+    "objectiveKey": "obj.L05.escape",
+    "activeWhen": {
+      "all": [
+        "L05.record_heard"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "L05.escaped"
+      ]
+    }
+  },
+  {
+    "id": "q.L05.decide",
+    "sceneId": "aleya.ep01.L05",
+    "objectiveKey": "obj.L05.decide",
+    "activeWhen": {
+      "all": [
+        "L05.escaped"
+      ]
+    },
+    "doneWhen": {
+      "all": [
+        "ep01.complete"
+      ]
+    }
+  }
+]

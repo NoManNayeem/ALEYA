@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="ALEYA: The Last Ferry (শেষ খেয়া) — a story-driven mystery set on a Bangladeshi river ghat. Episode 1." />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; media-src 'self' blob:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <title>ALEYA: The Last Ferry · শেষ খেয়া</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <style>
+      :root { --sat: env(safe-area-inset-top); --sar: env(safe-area-inset-right); --sab: env(safe-area-inset-bottom); --sal: env(safe-area-inset-left); }
+      html, body { background: #07090b; }
+    </style>
+  </head>
+  <body>
+    <canvas id="game" tabindex="-1" aria-label="ALEYA game view"></canvas>
+    <div id="ui"></div>
+    <noscript><p style="color:#ece4d2;font-family:sans-serif;padding:2rem">ALEYA needs JavaScript and WebGL2 to run.</p></noscript>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

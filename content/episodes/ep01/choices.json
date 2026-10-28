@@ -1,0 +1,10 @@
+[
+  {
+    "id": "choice.final",
+    "promptKey": "choice.final.prompt",
+    "options": [
+      { "id": "A", "labelKey": "choice.final.A.label", "detailKey": "choice.final.A.detail", "sequence": "L05.ending_A" },
+      { "id": "B", "labelKey": "choice.final.B.label", "detailKey": "choice.final.B.detail", "sequence": "L05.ending_B" }
+    ]
+  }
+]

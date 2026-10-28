@@ -1,0 +1,121 @@
+[
+  { "id": "L02.enter", "skippable": true, "steps": [
+    { "if": { "all": ["L02.entered"] }, "then": [], "else": [
+      { "playerState": "Cutscene" },
+      { "shot": "L02.rickshaw_dolly" },
+      { "fade": "in", "duration": 1.5 },
+      { "chapter": "chapter.L02" },
+      { "say": "L02.asha.enter" },
+      { "sfx": "radio_burst", "at": [28, 1, -2] },
+      { "say": "L02.caption.radio" },
+      { "wait": 1 },
+      { "set": "L02.entered" },
+      { "follow": true },
+      { "playerState": "Idle" },
+      { "checkpoint": "L02.cp_start" }
+    ] }
+  ] },
+  { "id": "L02.notice", "steps": [
+    { "say": "L02.asha.notice" },
+    { "clue": "clue.official_notice" },
+    { "sfx": "radio_click" },
+    { "say": "L02.mira.ledger" }
+  ] },
+  { "id": "L02.notice_doc", "steps": [
+    { "document": "doc.official_notice" },
+    { "clue": "clue.official_notice" }
+  ] },
+  { "id": "L02.stub", "steps": [
+    { "document": "doc.ticket_stub" },
+    { "clue": "clue.ticket_stub" },
+    { "say": "L02.asha.stub" }
+  ] },
+  { "id": "L02.roster", "steps": [
+    { "document": "doc.crew_roster" },
+    { "clue": "clue.crew_roster" },
+    { "say": "L02.asha.roster" }
+  ] },
+  { "id": "L02.tab", "steps": [
+    { "document": "doc.tea_tab" },
+    { "clue": "clue.tea_tab" },
+    { "say": "L02.asha.tab" }
+  ] },
+  { "id": "L02.ledger", "steps": [
+    { "if": { "none": ["L02.ledger_found"] }, "then": [
+      { "playerState": "Cutscene" },
+      { "shot": "L02.ledger_close" },
+      { "wait": 2.4 },
+      { "say": "L02.asha.ledger_found" },
+      { "set": "L02.ledger_found" },
+      { "follow": true },
+      { "playerState": "Idle" },
+      { "checkpoint": "L02.cp_ledger" }
+    ] },
+    { "puzzle": "P2.ledger" },
+    { "if": { "all": ["L02.ledger_solved"] }, "then": [
+      { "clue": "clue.ledger" },
+      { "music": "swell_reveal" },
+      { "say": "L02.asha.ledger_solved" },
+      { "sfx": "radio_burst", "at": [28, 1, -2] },
+      { "say": "L02.caption.radio_burst" },
+      { "checkpoint": "L02.cp_ledger" }
+    ] }
+  ] },
+  { "id": "L02.rahman", "steps": [
+    { "say": "L02.asha.rahman" }
+  ] },
+  { "id": "L02.tags", "steps": [
+    { "document": "doc.radio_tags" },
+    { "clue": "clue.radio_tags" },
+    { "say": "L02.asha.tags" }
+  ] },
+  { "id": "L02.radio", "steps": [
+    { "if": { "none": ["L02.radio_seen"] }, "then": [
+      { "say": "L02.asha.shutter_up" },
+      { "set": "L02.radio_seen" }
+    ] },
+    { "puzzle": "P3.radio" },
+    { "if": { "all": ["L02.radio_solved"] }, "then": [
+      { "playerState": "Cutscene" },
+      { "shot": "L02.radio_shop" },
+      { "say": "L02.rafi.frag_a" },
+      { "say": "L02.rafi.frag_b" },
+      { "say": "L02.rafi.frag_c" },
+      { "clue": "clue.rafi_message_2" },
+      { "say": "L02.asha.our_place" },
+      { "follow": true },
+      { "playerState": "Idle" },
+      { "sfx": "radio_click" },
+      { "say": "L02.mira.kanakhal" },
+      { "checkpoint": "L02.cp_ledger" }
+    ] }
+  ] },
+  { "id": "L02.memorial", "steps": [
+    { "sfx": "camera_shutter" },
+    { "document": "doc.memorial" },
+    { "clue": "clue.memorial" },
+    { "say": "L02.asha.memorial" }
+  ] },
+  { "id": "L02.hiding", "skippable": true, "steps": [
+    { "playerState": "Cutscene" },
+    { "shot": "L02.alley_map" },
+    { "sfx": "brick_scrape", "at": [56.2, 0.4, -1.2] },
+    { "wait": 1.2 },
+    { "item": "item.survey_map" },
+    { "clue": "clue.survey_map" },
+    { "set": "L02.map_found" },
+    { "document": "doc.survey_map" },
+    { "say": "L02.asha.map" },
+    { "say": "L02.asha.map2" },
+    { "follow": true },
+    { "playerState": "Idle" },
+    { "checkpoint": "L02.cp_map" },
+    { "sfx": "radio_click" },
+    { "say": "L02.mira.exit" }
+  ] },
+  { "id": "L02.exit", "steps": [
+    { "set": "L02.exit" },
+    { "fade": "out", "duration": 1.2 },
+    { "loadScene": "aleya.ep01.L03", "spawn": "L03.start" }
+  ] }
+]

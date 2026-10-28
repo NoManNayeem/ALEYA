@@ -1,0 +1,101 @@
+[
+  { "id": "L01.enter", "skippable": true, "steps": [
+    { "if": { "all": ["L01.entered"] }, "then": [], "else": [
+      { "playerState": "Cutscene" },
+      { "fade": "out", "duration": 0 },
+      { "shot": "L01.cold_open" },
+      { "music": "motif_opening" },
+      { "fade": "in", "duration": 2.5 },
+      { "sfx": "horn_far", "at": [-60, 2, -60] },
+      { "say": "L01.caption.horn_far" },
+      { "wait": 1.5 },
+      { "lightning": true },
+      { "wait": 2 },
+      { "fade": "out", "duration": 0.8 },
+      { "shot": "L01.ghat_entry" },
+      { "fade": "in", "duration": 1.2 },
+      { "chapter": "chapter.L01" },
+      { "say": "L01.asha.arrive" },
+      { "say": "L01.asha.message" },
+      { "set": "L01.entered" },
+      { "follow": true },
+      { "playerState": "Idle" },
+      { "set": "tip.move" },
+      { "checkpoint": "L01.cp_start" }
+    ] }
+  ] },
+  { "id": "L01.take_lantern", "steps": [
+    { "item": "item.lantern" },
+    { "say": "L01.asha.lantern" },
+    { "set": "tip.lantern" }
+  ] },
+  { "id": "L01.static", "steps": [
+    { "sfx": "radio_burst", "at": [10.5, 0.9, -2.1] },
+    { "say": "L01.caption.static" },
+    { "set": "L01.static" }
+  ] },
+  { "id": "L01.radio", "skippable": true, "steps": [
+    { "playerState": "Cutscene" },
+    { "shot": "L01.radio_close" },
+    { "say": "L01.rafi.fragment" },
+    { "say": "L01.asha.rafi" },
+    { "say": "L01.asha.unplugged" },
+    { "clue": "clue.rafi_message_1" },
+    { "follow": true },
+    { "sfx": "radio_click" },
+    { "say": "L01.mira.call1" },
+    { "say": "L01.mira.call2" },
+    { "say": "L01.asha.call3" },
+    { "say": "L01.mira.call4" },
+    { "set": "L01.mira_called" },
+    { "playerState": "Idle" }
+  ] },
+  { "id": "L01.fuse", "steps": [
+    { "document": "doc.fuse_diagram" },
+    { "clue": "clue.fuse_diagram" },
+    { "say": "L01.asha.fuse" }
+  ] },
+  { "id": "L01.calendar", "steps": [
+    { "document": "doc.calendar" },
+    { "clue": "clue.calendar" },
+    { "say": "L01.asha.calendar" }
+  ] },
+  { "id": "L01.karim", "skippable": true, "steps": [
+    { "playerState": "Cutscene" },
+    { "shot": "L01.karim_talk" },
+    { "say": "L01.karim.1" },
+    { "say": "L01.karim.2" },
+    { "say": "L01.asha.karim3" },
+    { "say": "L01.karim.4" },
+    { "clue": "clue.karim_story" },
+    { "follow": true },
+    { "playerState": "Idle" }
+  ] },
+  { "id": "L01.breaker_early", "steps": [
+    { "say": "L01.asha.breaker" }
+  ] },
+  { "id": "L01.breaker", "steps": [
+    { "puzzle": "P1.breaker" },
+    { "if": { "all": ["L01.power_on"] }, "then": [
+      { "playerState": "Cutscene" },
+      { "shot": "L01.breaker_restore" },
+      { "sfx": "power_on" },
+      { "wait": 1.2 },
+      { "say": "L01.asha.power" },
+      { "sfx": "horn_near", "at": [8, 1, -30] },
+      { "say": "L01.caption.horn_near" },
+      { "say": "L01.asha.horn" },
+      { "set": "L01.gate_open" },
+      { "sfx": "gate_open", "at": [37.4, 2, 0] },
+      { "follow": true },
+      { "playerState": "Idle" },
+      { "checkpoint": "L01.cp_power" },
+      { "say": "L01.mira.gate" }
+    ] }
+  ] },
+  { "id": "L01.exit", "steps": [
+    { "set": "L01.exit" },
+    { "fade": "out", "duration": 1.2 },
+    { "loadScene": "aleya.ep01.L02", "spawn": "L02.start" }
+  ] }
+]

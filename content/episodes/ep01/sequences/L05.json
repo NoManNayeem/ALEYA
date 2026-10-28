@@ -1,0 +1,563 @@
+[
+  {
+    "id": "L05.enter",
+    "skippable": true,
+    "steps": [
+      {
+        "if": {
+          "all": [
+            "L05.entered"
+          ]
+        },
+        "then": [],
+        "else": [
+          {
+            "playerState": "Cutscene"
+          },
+          {
+            "shot": "L05.reveal"
+          },
+          {
+            "fade": "in",
+            "duration": 2
+          },
+          {
+            "music": "motif_ferry"
+          },
+          {
+            "chapter": "chapter.L05"
+          },
+          {
+            "wait": 2
+          },
+          {
+            "say": "L05.asha.enter"
+          },
+          {
+            "set": "L05.entered"
+          },
+          {
+            "follow": true
+          },
+          {
+            "playerState": "Idle"
+          },
+          {
+            "checkpoint": "L05.cp_start"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L05.board",
+    "steps": [
+      {
+        "set": "L05.boarded"
+      },
+      {
+        "sfx": "plank_creak",
+        "at": [
+          11,
+          0.6,
+          0
+        ]
+      },
+      {
+        "say": "L05.asha.board"
+      }
+    ]
+  },
+  {
+    "id": "L05.jackets",
+    "steps": [
+      {
+        "clue": "clue.life_jackets"
+      },
+      {
+        "say": "L05.asha.jackets"
+      },
+      {
+        "if": {
+          "all": [
+            "has.clue.life_jackets",
+            "has.clue.captain_log"
+          ],
+          "none": [
+            "L05.clues_ready"
+          ]
+        },
+        "then": [
+          {
+            "set": "L05.clues_ready"
+          },
+          {
+            "say": "L05.asha.ready"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L05.log",
+    "steps": [
+      {
+        "document": "doc.captain_log"
+      },
+      {
+        "clue": "clue.captain_log"
+      },
+      {
+        "say": "L05.asha.log"
+      },
+      {
+        "say": "L05.asha.notes"
+      },
+      {
+        "if": {
+          "all": [
+            "has.clue.life_jackets",
+            "has.clue.captain_log"
+          ],
+          "none": [
+            "L05.clues_ready"
+          ]
+        },
+        "then": [
+          {
+            "set": "L05.clues_ready"
+          },
+          {
+            "say": "L05.asha.ready"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L05.reconstruct",
+    "steps": [
+      {
+        "puzzle": "R1.reconstruct"
+      },
+      {
+        "if": {
+          "all": [
+            "L05.reconstructed"
+          ]
+        },
+        "then": [
+          {
+            "clue": "clue.reconstruction"
+          },
+          {
+            "music": "swell_reveal"
+          },
+          {
+            "say": "L05.asha.reconstructed"
+          },
+          {
+            "checkpoint": "L05.cp_deck"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L05.gears",
+    "steps": [
+      {
+        "clue": "clue.gear_wear"
+      },
+      {
+        "say": "L05.asha.gears"
+      }
+    ]
+  },
+  {
+    "id": "L05.lock",
+    "steps": [
+      {
+        "puzzle": "P6.wheelhouse"
+      },
+      {
+        "if": {
+          "all": [
+            "L05.lock_solved"
+          ]
+        },
+        "then": [
+          {
+            "sfx": "lock_open",
+            "at": [
+              44,
+              4,
+              -0.5
+            ]
+          },
+          {
+            "say": "L05.caption.lock"
+          },
+          {
+            "checkpoint": "L05.cp_wheelhouse"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L05.record",
+    "skippable": true,
+    "steps": [
+      {
+        "playerState": "Cutscene"
+      },
+      {
+        "shot": "L05.cabin_truth"
+      },
+      {
+        "music": "motif_truth"
+      },
+      {
+        "say": "L05.asha.recorder"
+      },
+      {
+        "sfx": "tape_click",
+        "at": [
+          47.5,
+          4.25,
+          -1.1
+        ]
+      },
+      {
+        "say": "L05.rafi.final1"
+      },
+      {
+        "say": "L05.rafi.final2"
+      },
+      {
+        "say": "L05.rafi.final3"
+      },
+      {
+        "say": "L05.rafi.final4"
+      },
+      {
+        "say": "L05.rafi.final5"
+      },
+      {
+        "item": "item.rafi_tape"
+      },
+      {
+        "clue": "clue.rafi_final"
+      },
+      {
+        "set": "L05.record_heard"
+      },
+      {
+        "say": "L05.asha.oh_rafi"
+      },
+      {
+        "wait": 1.2
+      },
+      {
+        "sfx": "footsteps_stairs",
+        "at": [
+          39,
+          2.5,
+          0
+        ]
+      },
+      {
+        "say": "L05.caption.steps"
+      },
+      {
+        "set": "L05.karim_here"
+      },
+      {
+        "shot": "L05.karim_confront"
+      },
+      {
+        "say": "L05.karim.1"
+      },
+      {
+        "say": "L05.asha.k1"
+      },
+      {
+        "say": "L05.karim.2"
+      },
+      {
+        "say": "L05.karim.3"
+      },
+      {
+        "say": "L05.karim.4"
+      },
+      {
+        "say": "L05.asha.k2"
+      },
+      {
+        "say": "L05.karim.5"
+      },
+      {
+        "clue": "clue.karim_confession"
+      },
+      {
+        "music": null
+      },
+      {
+        "quake": 1.0
+      },
+      {
+        "sfx": "hull_groan"
+      },
+      {
+        "say": "L05.caption.lurch"
+      },
+      {
+        "water": "L05.flood",
+        "y": 1.9,
+        "duration": 6
+      },
+      {
+        "sfx": "radio_click"
+      },
+      {
+        "say": "L05.mira.shift"
+      },
+      {
+        "unset": "L05.karim_here"
+      },
+      {
+        "set": "L05.chase_started"
+      },
+      {
+        "follow": true
+      },
+      {
+        "playerState": "Idle"
+      },
+      {
+        "checkpoint": "L05.cp_chase"
+      }
+    ]
+  },
+  {
+    "id": "L05.chase",
+    "steps": [
+      {
+        "music": "chase_pulse"
+      },
+      {
+        "sfx": "watcher_tele",
+        "at": [
+          39.5,
+          4,
+          0
+        ]
+      },
+      {
+        "set": "tip.run"
+      },
+      {
+        "say": "L05.asha.go"
+      }
+    ]
+  },
+  {
+    "id": "L05.escaped",
+    "steps": [
+      {
+        "music": null
+      },
+      {
+        "set": "L05.escaped"
+      },
+      {
+        "set": "L05.karim_bank"
+      },
+      {
+        "checkpoint": "L05.cp_bank"
+      },
+      {
+        "say": "L05.asha.safe"
+      },
+      {
+        "say": "L05.karim.safe"
+      }
+    ]
+  },
+  {
+    "id": "L05.decision",
+    "steps": [
+      {
+        "playerState": "Cutscene"
+      },
+      {
+        "shot": "L05.decision"
+      },
+      {
+        "sfx": "radio_click"
+      },
+      {
+        "say": "L05.mira.decide"
+      },
+      {
+        "choice": "choice.final"
+      }
+    ]
+  },
+  {
+    "id": "L05.ending_A",
+    "steps": [
+      {
+        "playerState": "Cutscene"
+      },
+      {
+        "shot": "L05.ending"
+      },
+      {
+        "say": "L05.asha.endA"
+      },
+      {
+        "sfx": "radio_send"
+      },
+      {
+        "say": "L05.mira.endA"
+      },
+      {
+        "set": "ending.A"
+      },
+      {
+        "music": "motif_end_A"
+      },
+      {
+        "wait": 2
+      },
+      {
+        "fade": "out",
+        "duration": 2.5
+      },
+      {
+        "chapter": "ending.A.card1"
+      },
+      {
+        "chapter": "ending.A.card2"
+      },
+      {
+        "chapter": "ending.A.card3"
+      },
+      {
+        "chapter": "ending.names"
+      },
+      {
+        "set": "ep01.complete"
+      },
+      {
+        "credits": true
+      },
+      {
+        "shot": "L05.postcredits"
+      },
+      {
+        "fade": "in",
+        "duration": 3
+      },
+      {
+        "sfx": "horn_far",
+        "at": [
+          110,
+          1,
+          -70
+        ]
+      },
+      {
+        "say": "L05.caption.horn_end"
+      },
+      {
+        "wait": 3
+      },
+      {
+        "chapter": "postcredits.card"
+      },
+      {
+        "fade": "out",
+        "duration": 2
+      }
+    ]
+  },
+  {
+    "id": "L05.ending_B",
+    "steps": [
+      {
+        "playerState": "Cutscene"
+      },
+      {
+        "shot": "L05.ending"
+      },
+      {
+        "say": "L05.asha.endB"
+      },
+      {
+        "say": "L05.mira.endB"
+      },
+      {
+        "set": "ending.B"
+      },
+      {
+        "music": "motif_end_B"
+      },
+      {
+        "wait": 2
+      },
+      {
+        "fade": "out",
+        "duration": 2.5
+      },
+      {
+        "chapter": "ending.B.card1"
+      },
+      {
+        "chapter": "ending.B.card2"
+      },
+      {
+        "chapter": "ending.B.card3"
+      },
+      {
+        "chapter": "ending.names"
+      },
+      {
+        "set": "ep01.complete"
+      },
+      {
+        "credits": true
+      },
+      {
+        "shot": "L05.postcredits"
+      },
+      {
+        "fade": "in",
+        "duration": 3
+      },
+      {
+        "sfx": "horn_far",
+        "at": [
+          110,
+          1,
+          -70
+        ]
+      },
+      {
+        "say": "L05.caption.horn_end"
+      },
+      {
+        "wait": 3
+      },
+      {
+        "chapter": "postcredits.card"
+      },
+      {
+        "fade": "out",
+        "duration": 2
+      }
+    ]
+  }
+]

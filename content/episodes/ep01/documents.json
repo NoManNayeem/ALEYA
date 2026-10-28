@@ -1,0 +1,15 @@
+[
+  { "id": "doc.fuse_diagram", "titleKey": "clue.fuse_diagram.title", "bodyKey": "doc.fuse_diagram.body", "style": "chalk" },
+  { "id": "doc.calendar", "titleKey": "clue.calendar.title", "bodyKey": "doc.calendar.body", "style": "paper" },
+  { "id": "doc.official_notice", "titleKey": "clue.official_notice.title", "bodyKey": "doc.official_notice.body", "style": "notice" },
+  { "id": "doc.ticket_stub", "titleKey": "clue.ticket_stub.title", "bodyKey": "doc.ticket_stub.body", "style": "paper" },
+  { "id": "doc.tea_tab", "titleKey": "clue.tea_tab.title", "bodyKey": "doc.tea_tab.body", "style": "ledger" },
+  { "id": "doc.crew_roster", "titleKey": "clue.crew_roster.title", "bodyKey": "doc.crew_roster.body", "style": "paper" },
+  { "id": "doc.radio_tags", "titleKey": "clue.radio_tags.title", "bodyKey": "doc.radio_tags.body", "style": "paper" },
+  { "id": "doc.survey_map", "titleKey": "clue.survey_map.title", "bodyKey": "doc.survey_map.body", "style": "map" },
+  { "id": "doc.memorial", "titleKey": "clue.memorial.title", "bodyKey": "doc.memorial.body", "style": "photo" },
+  { "id": "doc.earthworks_sign", "titleKey": "clue.earthworks_sign.title", "bodyKey": "doc.earthworks_sign.body", "style": "notice" },
+  { "id": "doc.chalk", "titleKey": "clue.chalk.title", "bodyKey": "doc.chalk.body", "style": "chalk" },
+  { "id": "doc.shrine", "titleKey": "clue.shrine.title", "bodyKey": "doc.shrine.body", "style": "photo" },
+  { "id": "doc.captain_log", "titleKey": "clue.captain_log.title", "bodyKey": "doc.captain_log.body", "style": "ledger" }
+]

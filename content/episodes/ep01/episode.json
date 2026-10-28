@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "aleya.ep01",
+  "titleKey": "episode.title",
+  "firstScene": "aleya.ep01.L01",
+  "firstSpawn": "L01.start",
+  "scenes": ["aleya.ep01.L01", "aleya.ep01.L02", "aleya.ep01.L03", "aleya.ep01.L04", "aleya.ep01.L05"],
+  "completeFlag": "ep01.complete"
+}

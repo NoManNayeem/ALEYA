@@ -1,0 +1,1193 @@
+{
+  "id": "aleya.ep01.L05",
+  "version": 1,
+  "displayNameKey": "scene.L05.name",
+  "chapterKey": "chapter.L05",
+  "lightingPreset": {
+    "ambient": [
+      0.045,
+      0.05,
+      0.06
+    ],
+    "fogColor": [
+      0.065,
+      0.07,
+      0.08
+    ],
+    "fogDensity": 0.036,
+    "skyTop": [
+      0.022,
+      0.026,
+      0.034
+    ],
+    "skyBottom": [
+      0.09,
+      0.095,
+      0.11
+    ],
+    "moon": {
+      "color": [
+        0.55,
+        0.62,
+        0.78
+      ],
+      "intensity": 0.32,
+      "rot": [
+        50,
+        15,
+        0
+      ]
+    },
+    "rain": 0.6,
+    "lightning": [
+      14,
+      30
+    ],
+    "exposure": 1.2
+  },
+  "spawnPoints": [
+    {
+      "id": "L05.start",
+      "pos": [
+        1,
+        0,
+        0.3
+      ],
+      "facing": 1
+    },
+    {
+      "id": "L05.deck",
+      "pos": [
+        27,
+        1.05,
+        0
+      ],
+      "facing": 1
+    },
+    {
+      "id": "L05.wheelhouse",
+      "pos": [
+        45.5,
+        3.4,
+        0
+      ],
+      "facing": 1
+    },
+    {
+      "id": "L05.chase",
+      "pos": [
+        47.5,
+        3.4,
+        0
+      ],
+      "facing": 1
+    },
+    {
+      "id": "L05.bank",
+      "pos": [
+        67,
+        0.15,
+        0.3
+      ],
+      "facing": 1
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "L05.cp_start",
+      "spawn": "L05.start"
+    },
+    {
+      "id": "L05.cp_deck",
+      "spawn": "L05.deck"
+    },
+    {
+      "id": "L05.cp_wheelhouse",
+      "spawn": "L05.wheelhouse"
+    },
+    {
+      "id": "L05.cp_chase",
+      "spawn": "L05.chase"
+    },
+    {
+      "id": "L05.cp_bank",
+      "spawn": "L05.bank"
+    }
+  ],
+  "navLanes": [
+    {
+      "x0": -1,
+      "x1": 9,
+      "z0": -0.5,
+      "z1": 1.2,
+      "y0": 0,
+      "surface": "mud"
+    },
+    {
+      "x0": 9,
+      "x1": 13,
+      "z0": 0.0,
+      "z1": 0.45,
+      "y0": 0,
+      "y1": 1.05,
+      "surface": "wood"
+    },
+    {
+      "x0": 13,
+      "x1": 36,
+      "z0": -0.7,
+      "z1": 0.5,
+      "y0": 1.05,
+      "y1": 1.05,
+      "surface": "wood"
+    },
+    {
+      "x0": 36,
+      "x1": 40,
+      "z0": -0.3,
+      "z1": 0.3,
+      "y0": 1.05,
+      "y1": 3.4,
+      "surface": "metal"
+    },
+    {
+      "x0": 40,
+      "x1": 55,
+      "z0": -0.6,
+      "z1": 0.4,
+      "y0": 3.4,
+      "surface": "wood"
+    },
+    {
+      "x0": 55,
+      "x1": 62,
+      "z0": -0.1,
+      "z1": 0.4,
+      "y0": 3.4,
+      "y1": 0.15,
+      "surface": "wood"
+    },
+    {
+      "x0": 62,
+      "x1": 80,
+      "z0": -0.5,
+      "z1": 1.2,
+      "y0": 0.15,
+      "surface": "mud"
+    }
+  ],
+  "barriers": [
+    {
+      "id": "L05.b_stairs",
+      "x": 35.8,
+      "until": {
+        "all": [
+          "L05.reconstructed"
+        ]
+      },
+      "messageKey": "barrier.L05.stairs"
+    },
+    {
+      "id": "L05.b_door",
+      "x": 44.2,
+      "until": {
+        "all": [
+          "L05.lock_solved"
+        ]
+      },
+      "messageKey": "barrier.L05.door"
+    },
+    {
+      "id": "L05.b_bow",
+      "x": 50.5,
+      "until": {
+        "all": [
+          "L05.chase_started"
+        ]
+      },
+      "messageKey": "barrier.L05.bow"
+    }
+  ],
+  "cameraRails": [
+    {
+      "x0": -10,
+      "x1": 13,
+      "offset": [
+        0,
+        1.67,
+        5.6
+      ],
+      "look": [
+        0.7,
+        1.1,
+        -0.5
+      ],
+      "fov": 40
+    },
+    {
+      "x0": 13,
+      "x1": 36,
+      "offset": [
+        0,
+        1.32,
+        4.48
+      ],
+      "look": [
+        0.6,
+        0.9,
+        -0.4
+      ],
+      "fov": 40
+    },
+    {
+      "x0": 36,
+      "x1": 56,
+      "offset": [
+        -2.2,
+        2.6,
+        7.4
+      ],
+      "look": [
+        -0.6,
+        1.0,
+        0
+      ],
+      "fov": 46
+    },
+    {
+      "x0": 56,
+      "x1": 90,
+      "offset": [
+        0,
+        1.76,
+        5.76
+      ],
+      "look": [
+        0.6,
+        1.0,
+        -0.3
+      ],
+      "fov": 40
+    }
+  ],
+  "shots": [
+    {
+      "id": "L05.reveal",
+      "kind": "Reveal",
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            -7,
+            1.1,
+            6.2
+          ],
+          "target": [
+            1,
+            1.4,
+            -4
+          ],
+          "fov": 40
+        },
+        {
+          "t": 8,
+          "pos": [
+            7,
+            1.7,
+            8
+          ],
+          "target": [
+            26,
+            2.6,
+            -2
+          ],
+          "fov": 46
+        }
+      ]
+    },
+    {
+      "id": "L05.cabin_truth",
+      "kind": "Dialogue",
+      "hold": true,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            44.6,
+            4.7,
+            2.7
+          ],
+          "target": [
+            47.5,
+            4.25,
+            -0.9
+          ],
+          "fov": 36
+        },
+        {
+          "t": 24,
+          "pos": [
+            46.1,
+            4.45,
+            1.2
+          ],
+          "target": [
+            47.5,
+            4.25,
+            -0.9
+          ],
+          "fov": 28
+        }
+      ]
+    },
+    {
+      "id": "L05.karim_confront",
+      "kind": "Dialogue",
+      "hold": true,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            48.8,
+            4.7,
+            3.2
+          ],
+          "target": [
+            42.2,
+            4.4,
+            -0.3
+          ],
+          "fov": 38
+        },
+        {
+          "t": 30,
+          "pos": [
+            48.2,
+            4.6,
+            2.7
+          ],
+          "target": [
+            42.2,
+            4.4,
+            -0.3
+          ],
+          "fov": 34
+        }
+      ]
+    },
+    {
+      "id": "L05.decision",
+      "kind": "Choice",
+      "hold": true,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            69.2,
+            1.55,
+            4.8
+          ],
+          "target": [
+            71.2,
+            1.35,
+            -0.3
+          ],
+          "fov": 40
+        }
+      ]
+    },
+    {
+      "id": "L05.ending",
+      "kind": "Ending",
+      "hold": true,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            71,
+            1.8,
+            6
+          ],
+          "target": [
+            71,
+            1.2,
+            -6
+          ],
+          "fov": 42
+        },
+        {
+          "t": 16,
+          "pos": [
+            70,
+            5.5,
+            13
+          ],
+          "target": [
+            55,
+            0.5,
+            -30
+          ],
+          "fov": 50
+        }
+      ]
+    },
+    {
+      "id": "L05.postcredits",
+      "kind": "Ending",
+      "hold": true,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            70,
+            1.6,
+            8
+          ],
+          "target": [
+            110,
+            0.3,
+            -70
+          ],
+          "fov": 30
+        },
+        {
+          "t": 10,
+          "pos": [
+            70,
+            1.6,
+            8
+          ],
+          "target": [
+            112,
+            0.3,
+            -70
+          ],
+          "fov": 29
+        }
+      ]
+    }
+  ],
+  "audioZones": [
+    {
+      "id": "L05.bed",
+      "x0": -10,
+      "x1": 13,
+      "bed": "bed_creek"
+    },
+    {
+      "id": "L05.bedin",
+      "x0": 13,
+      "x1": 56,
+      "bed": "bed_ferry"
+    },
+    {
+      "id": "L05.bed3",
+      "x0": 56,
+      "x1": 90,
+      "bed": "bed_creek"
+    }
+  ],
+  "soundEmitters": [
+    {
+      "id": "L05.hull",
+      "cue": "loop_hull",
+      "pos": [
+        30,
+        1,
+        -1
+      ],
+      "gain": 0.9
+    },
+    {
+      "id": "L05.below",
+      "cue": "loop_wade",
+      "pos": [
+        22,
+        0.5,
+        -0.5
+      ],
+      "gain": 0.6
+    },
+    {
+      "id": "L05.tick",
+      "cue": "loop_tick",
+      "pos": [
+        43.4,
+        3.8,
+        -1
+      ],
+      "gain": 0.5
+    }
+  ],
+  "water": [
+    {
+      "y": -0.4,
+      "x0": -60,
+      "x1": 180,
+      "z0": -90,
+      "z1": -2.4,
+      "tint": [
+        0.04,
+        0.055,
+        0.055
+      ]
+    },
+    {
+      "y": -0.45,
+      "x0": 8,
+      "x1": 62,
+      "z0": -2.6,
+      "z1": 14,
+      "tint": [
+        0.04,
+        0.055,
+        0.055
+      ]
+    },
+    {
+      "y": 0.75,
+      "x0": 13,
+      "x1": 36,
+      "z0": -1.8,
+      "z1": 0.9,
+      "tag": "L05.flood",
+      "tint": [
+        0.05,
+        0.06,
+        0.055
+      ]
+    }
+  ],
+  "props": [
+    {
+      "kind": "prefab",
+      "prefab": "distantShore",
+      "pos": [
+        0,
+        0,
+        -70
+      ],
+      "layer": "bg",
+      "params": {
+        "x0": -60,
+        "x1": 180,
+        "lights": 2,
+        "seed": 31,
+        "mangrove": true
+      }
+    },
+    {
+      "kind": "box",
+      "pos": [
+        4,
+        -0.45,
+        0.4
+      ],
+      "scale": [
+        12,
+        0.9,
+        5
+      ],
+      "material": "mud_wet"
+    },
+    {
+      "kind": "box",
+      "pos": [
+        72,
+        -0.3,
+        0.4
+      ],
+      "scale": [
+        24,
+        0.9,
+        5
+      ],
+      "material": "mud_wet"
+    },
+    {
+      "kind": "prefab",
+      "prefab": "ferry",
+      "pos": [
+        33,
+        -0.6,
+        -1.2
+      ],
+      "rot": [
+        0,
+        0,
+        0
+      ],
+      "params": {
+        "length": 46,
+        "cutaway": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "gangplank",
+      "pos": [
+        11,
+        0.5,
+        0.2
+      ],
+      "params": {
+        "length": 4.2,
+        "rise": 1.0
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "jacketRack",
+      "pos": [
+        17.5,
+        1.05,
+        -1.35
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bench",
+      "pos": [
+        20.5,
+        1.05,
+        -0.9
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bench",
+      "pos": [
+        23,
+        1.05,
+        -0.9
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bench",
+      "pos": [
+        30.5,
+        1.05,
+        -0.9
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "table",
+      "pos": [
+        24.6,
+        1.05,
+        -1.3
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "ledgerBook",
+      "pos": [
+        24.6,
+        1.85,
+        -1.3
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "table",
+      "pos": [
+        28,
+        1.05,
+        -1.3
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "sacks",
+      "pos": [
+        33.5,
+        1.05,
+        -1.4
+      ],
+      "params": {
+        "count": 4
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "gearbox",
+      "pos": [
+        43.4,
+        3.4,
+        -1.0
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "recorder",
+      "pos": [
+        47.5,
+        4.25,
+        -1.1
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "figure",
+      "pos": [
+        41.6,
+        3.3,
+        -0.2
+      ],
+      "rot": [
+        0,
+        60,
+        0
+      ],
+      "when": {
+        "all": [
+          "L05.karim_here"
+        ]
+      },
+      "params": {
+        "who": "karim"
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "figure",
+      "pos": [
+        72.4,
+        0.15,
+        -0.3
+      ],
+      "rot": [
+        0,
+        -40,
+        0
+      ],
+      "when": {
+        "all": [
+          "L05.karim_bank"
+        ]
+      },
+      "params": {
+        "who": "karim"
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "rope",
+      "pos": [
+        58.5,
+        1.8,
+        0.2
+      ],
+      "params": {
+        "length": 7.0,
+        "rise": -3.25
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "tree",
+      "pos": [
+        78,
+        0,
+        -7
+      ],
+      "layer": "bg",
+      "params": {
+        "height": 8,
+        "radius": 4,
+        "mangrove": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "fgPost",
+      "pos": [
+        24,
+        -0.5,
+        4.3
+      ],
+      "layer": "fg",
+      "params": {
+        "height": 6,
+        "bamboo": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "fgPost",
+      "pos": [
+        64,
+        -0.5,
+        4.0
+      ],
+      "layer": "fg",
+      "params": {
+        "height": 5,
+        "bamboo": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        -3,
+        -0.2,
+        3.2
+      ],
+      "layer": "fg",
+      "params": {
+        "width": 6,
+        "depth": 1.6,
+        "count": 110,
+        "tall": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        3,
+        -0.2,
+        3.2
+      ],
+      "layer": "fg",
+      "params": {
+        "width": 6,
+        "depth": 1.6,
+        "count": 110,
+        "tall": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        8,
+        -0.2,
+        3.2
+      ],
+      "layer": "fg",
+      "params": {
+        "width": 6,
+        "depth": 1.6,
+        "count": 110,
+        "tall": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        64,
+        -0.2,
+        -2.2
+      ],
+      "params": {
+        "width": 6,
+        "depth": 1.6,
+        "count": 80
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        66,
+        -0.3,
+        3.4
+      ],
+      "layer": "fg",
+      "params": {
+        "width": 5,
+        "depth": 1.4,
+        "count": 60
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        70,
+        -0.2,
+        -2.2
+      ],
+      "params": {
+        "width": 6,
+        "depth": 1.6,
+        "count": 80
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        72,
+        -0.3,
+        3.4
+      ],
+      "layer": "fg",
+      "params": {
+        "width": 5,
+        "depth": 1.4,
+        "count": 60
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        76,
+        -0.2,
+        -2.2
+      ],
+      "params": {
+        "width": 6,
+        "depth": 1.6,
+        "count": 80
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "reeds",
+      "pos": [
+        78,
+        -0.3,
+        3.4
+      ],
+      "layer": "fg",
+      "params": {
+        "width": 5,
+        "depth": 1.4,
+        "count": 60
+      }
+    }
+  ],
+  "lights": [
+    {
+      "id": "L05.emergency",
+      "pos": [
+        47.5,
+        5.0,
+        -0.8
+      ],
+      "color": [
+        0.4,
+        1,
+        0.6
+      ],
+      "intensity": 1.0,
+      "range": 5,
+      "flicker": 0.7
+    },
+    {
+      "id": "L05.cabin",
+      "pos": [
+        25,
+        2.2,
+        -1
+      ],
+      "color": [
+        0.8,
+        0.85,
+        1
+      ],
+      "intensity": 0.45,
+      "range": 7,
+      "flicker": 0.25
+    },
+    {
+      "id": "L05.bank",
+      "pos": [
+        72,
+        2.5,
+        0.5
+      ],
+      "color": [
+        1,
+        0.6,
+        0.3
+      ],
+      "intensity": 1.1,
+      "range": 6,
+      "flicker": 0.3,
+      "when": {
+        "all": [
+          "L05.karim_bank"
+        ]
+      }
+    }
+  ],
+  "interactables": [
+    {
+      "id": "L05.jackets",
+      "pos": [
+        17.5,
+        1.9,
+        -1.0
+      ],
+      "verbKey": "verb.inspect",
+      "objectKey": "obj.life_jackets",
+      "sequence": "L05.jackets",
+      "once": true
+    },
+    {
+      "id": "L05.log",
+      "pos": [
+        24.6,
+        1.95,
+        -1.0
+      ],
+      "verbKey": "verb.read",
+      "objectKey": "obj.captain_log",
+      "sequence": "L05.log"
+    },
+    {
+      "id": "L05.reconstruct",
+      "pos": [
+        28,
+        1.95,
+        -1.0
+      ],
+      "verbKey": "verb.reconstruct",
+      "objectKey": "obj.evidence",
+      "sequence": "L05.reconstruct",
+      "when": {
+        "all": [
+          "L05.clues_ready"
+        ],
+        "none": [
+          "L05.reconstructed"
+        ]
+      }
+    },
+    {
+      "id": "L05.gears",
+      "pos": [
+        42.6,
+        4.2,
+        -0.8
+      ],
+      "verbKey": "verb.inspect",
+      "objectKey": "obj.gearbox_wear",
+      "sequence": "L05.gears",
+      "once": true
+    },
+    {
+      "id": "L05.lock",
+      "pos": [
+        43.5,
+        4.2,
+        -0.8
+      ],
+      "verbKey": "verb.operate",
+      "objectKey": "obj.gearbox",
+      "sequence": "L05.lock",
+      "when": {
+        "none": [
+          "L05.lock_solved"
+        ]
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "id": "L05.t_board",
+      "x0": 9.5,
+      "x1": 11,
+      "sequence": "L05.board",
+      "when": {
+        "none": [
+          "L05.boarded"
+        ]
+      }
+    },
+    {
+      "id": "L05.t_record",
+      "x0": 46,
+      "x1": 48.5,
+      "sequence": "L05.record",
+      "when": {
+        "all": [
+          "L05.lock_solved"
+        ],
+        "none": [
+          "L05.record_heard"
+        ]
+      }
+    },
+    {
+      "id": "L05.t_chase",
+      "x0": 44.5,
+      "x1": 50,
+      "sequence": "L05.chase",
+      "when": {
+        "all": [
+          "L05.chase_started"
+        ],
+        "none": [
+          "L05.escaped"
+        ]
+      }
+    },
+    {
+      "id": "L05.t_decide",
+      "x0": 69,
+      "x1": 71.5,
+      "sequence": "L05.decision",
+      "when": {
+        "all": [
+          "L05.escaped"
+        ],
+        "none": [
+          "ep01.complete"
+        ]
+      }
+    }
+  ],
+  "threats": [
+    {
+      "id": "L05.watcher",
+      "kind": "pursuit",
+      "spawn": [
+        42.0,
+        3.4,
+        0.1
+      ],
+      "speed": 0.88,
+      "telegraphSeconds": 2.6,
+      "safeX": 66,
+      "failCheckpoint": "L05.cp_chase",
+      "onEscape": "L05.escaped",
+      "activeWhen": {
+        "all": [
+          "L05.chase_started"
+        ],
+        "none": [
+          "L05.escaped"
+        ]
+      }
+    }
+  ],
+  "puzzleIds": [
+    "R1.reconstruct",
+    "P6.wheelhouse"
+  ],
+  "questNodes": [
+    "q.L05.board",
+    "q.L05.search",
+    "q.L05.reconstruct",
+    "q.L05.wheelhouse",
+    "q.L05.record",
+    "q.L05.escape",
+    "q.L05.decide"
+  ],
+  "enterSequence": "L05.enter",
+  "criticalBundle": [
+    "proc:materials",
+    "proc:rain",
+    "proc:audio"
+  ],
+  "memoryBudgetMb": 260
+}

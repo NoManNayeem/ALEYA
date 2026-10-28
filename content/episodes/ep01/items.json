@@ -1,0 +1,7 @@
+[
+  { "id": "item.camera", "nameKey": "item.camera.name", "descKey": "item.camera.desc" },
+  { "id": "item.radio", "nameKey": "item.radio.name", "descKey": "item.radio.desc" },
+  { "id": "item.lantern", "nameKey": "item.lantern.name", "descKey": "item.lantern.desc" },
+  { "id": "item.survey_map", "nameKey": "item.survey_map.name", "descKey": "item.survey_map.desc" },
+  { "id": "item.rafi_tape", "nameKey": "item.rafi_tape.name", "descKey": "item.rafi_tape.desc" }
+]

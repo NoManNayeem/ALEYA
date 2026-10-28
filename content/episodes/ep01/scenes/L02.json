@@ -1,0 +1,1232 @@
+{
+  "id": "aleya.ep01.L02",
+  "version": 1,
+  "displayNameKey": "scene.L02.name",
+  "chapterKey": "chapter.L02",
+  "lightingPreset": {
+    "ambient": [
+      0.045,
+      0.05,
+      0.065
+    ],
+    "fogColor": [
+      0.055,
+      0.06,
+      0.075
+    ],
+    "fogDensity": 0.034,
+    "skyTop": [
+      0.02,
+      0.022,
+      0.03
+    ],
+    "skyBottom": [
+      0.08,
+      0.085,
+      0.1
+    ],
+    "moon": {
+      "color": [
+        0.5,
+        0.58,
+        0.75
+      ],
+      "intensity": 0.28,
+      "rot": [
+        52,
+        -25,
+        0
+      ]
+    },
+    "rain": 0.7,
+    "lightning": [
+      12,
+      28
+    ],
+    "exposure": 1.2
+  },
+  "spawnPoints": [
+    {
+      "id": "L02.start",
+      "pos": [
+        1.2,
+        0,
+        0.4
+      ],
+      "facing": 1
+    },
+    {
+      "id": "L02.counter",
+      "pos": [
+        11,
+        0,
+        0.3
+      ],
+      "facing": 1
+    },
+    {
+      "id": "L02.alley",
+      "pos": [
+        56.5,
+        -0.3,
+        0
+      ],
+      "facing": 1
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "L02.cp_start",
+      "spawn": "L02.start"
+    },
+    {
+      "id": "L02.cp_ledger",
+      "spawn": "L02.counter"
+    },
+    {
+      "id": "L02.cp_map",
+      "spawn": "L02.alley"
+    }
+  ],
+  "navLanes": [
+    {
+      "x0": -1,
+      "x1": 50.5,
+      "z0": -1.2,
+      "z1": 2.2,
+      "y0": 0,
+      "surface": "concrete"
+    },
+    {
+      "x0": 50.5,
+      "x1": 52.5,
+      "z0": -0.7,
+      "z1": 0.7,
+      "y0": 0,
+      "y1": -0.3,
+      "surface": "water"
+    },
+    {
+      "x0": 52.5,
+      "x1": 62,
+      "z0": -0.7,
+      "z1": 0.7,
+      "y0": -0.3,
+      "surface": "water"
+    }
+  ],
+  "barriers": [
+    {
+      "id": "L02.b_alley",
+      "x": 50.2,
+      "until": {
+        "all": [
+          "L02.radio_solved"
+        ]
+      },
+      "messageKey": "line.L02.asha.alley_blocked"
+    },
+    {
+      "id": "L02.b_map",
+      "x": 59,
+      "until": {
+        "all": [
+          "L02.map_found"
+        ]
+      },
+      "messageKey": "barrier.L02.map"
+    }
+  ],
+  "staticColliders": [
+    {
+      "x0": 2.2,
+      "x1": 4.1,
+      "z0": -1.3,
+      "z1": -0.5
+    }
+  ],
+  "cameraRails": [
+    {
+      "x0": -10,
+      "x1": 50,
+      "offset": [
+        0,
+        1.76,
+        5.76
+      ],
+      "look": [
+        0.6,
+        1.2,
+        -0.4
+      ],
+      "fov": 40
+    },
+    {
+      "x0": 50,
+      "x1": 70,
+      "offset": [
+        0,
+        1.5,
+        4.32
+      ],
+      "look": [
+        0.6,
+        1.0,
+        -0.3
+      ],
+      "fov": 40
+    }
+  ],
+  "shots": [
+    {
+      "id": "L02.rickshaw_dolly",
+      "kind": "Establishing",
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            -1.5,
+            0.9,
+            3.2
+          ],
+          "target": [
+            3.1,
+            0.9,
+            -1.0
+          ],
+          "fov": 38
+        },
+        {
+          "t": 7,
+          "pos": [
+            5.6,
+            1.25,
+            3.4
+          ],
+          "target": [
+            27.5,
+            1.3,
+            -2.4
+          ],
+          "fov": 32
+        }
+      ]
+    },
+    {
+      "id": "L02.ledger_close",
+      "kind": "Inspect",
+      "hold": true,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            10.5,
+            1.75,
+            -0.3
+          ],
+          "target": [
+            10.5,
+            1.05,
+            -1.75
+          ],
+          "fov": 30
+        },
+        {
+          "t": 2.5,
+          "pos": [
+            10.5,
+            1.75,
+            -0.3
+          ],
+          "target": [
+            10.5,
+            1.05,
+            -1.75
+          ],
+          "fov": 30
+        },
+        {
+          "t": 5,
+          "pos": [
+            12.2,
+            1.6,
+            1.9
+          ],
+          "target": [
+            10.4,
+            1.5,
+            -0.2
+          ],
+          "fov": 34
+        }
+      ]
+    },
+    {
+      "id": "L02.radio_shop",
+      "kind": "Inspect",
+      "hold": true,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            25.8,
+            1.6,
+            2.8
+          ],
+          "target": [
+            28,
+            1.0,
+            -2.0
+          ],
+          "fov": 36
+        },
+        {
+          "t": 4,
+          "pos": [
+            26.6,
+            1.4,
+            1.8
+          ],
+          "target": [
+            28,
+            1.0,
+            -2.0
+          ],
+          "fov": 32
+        }
+      ]
+    },
+    {
+      "id": "L02.alley_map",
+      "kind": "Inspect",
+      "hold": true,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            54.4,
+            1.0,
+            1.6
+          ],
+          "target": [
+            56.2,
+            0.4,
+            -0.9
+          ],
+          "fov": 36
+        },
+        {
+          "t": 4,
+          "pos": [
+            55.0,
+            0.9,
+            1.0
+          ],
+          "target": [
+            56.2,
+            0.4,
+            -0.9
+          ],
+          "fov": 30
+        }
+      ]
+    }
+  ],
+  "audioZones": [
+    {
+      "id": "L02.bed",
+      "x0": -10,
+      "x1": 50,
+      "bed": "bed_bazaar"
+    },
+    {
+      "id": "L02.alleybed",
+      "x0": 50,
+      "x1": 70,
+      "bed": "bed_alley"
+    }
+  ],
+  "soundEmitters": [
+    {
+      "id": "L02.drip1",
+      "cue": "loop_drip",
+      "pos": [
+        8,
+        2.8,
+        -1.4
+      ],
+      "gain": 0.6
+    },
+    {
+      "id": "L02.drip2",
+      "cue": "loop_drip",
+      "pos": [
+        34,
+        2.8,
+        -1.4
+      ],
+      "gain": 0.6
+    },
+    {
+      "id": "L02.tin",
+      "cue": "loop_tin",
+      "pos": [
+        20,
+        3.2,
+        -2.2
+      ],
+      "gain": 0.6
+    },
+    {
+      "id": "L02.radio",
+      "cue": "loop_radio",
+      "pos": [
+        28,
+        1.0,
+        -2.0
+      ],
+      "gain": 0.8,
+      "when": {
+        "all": [
+          "L02.ledger_solved"
+        ],
+        "none": [
+          "L02.radio_solved"
+        ]
+      }
+    },
+    {
+      "id": "L02.flood",
+      "cue": "loop_wade",
+      "pos": [
+        56,
+        -0.2,
+        0
+      ],
+      "gain": 0.5
+    }
+  ],
+  "water": [
+    {
+      "y": -0.12,
+      "x0": 50.6,
+      "x1": 66,
+      "z0": -3,
+      "z1": 4
+    }
+  ],
+  "props": [
+    {
+      "kind": "box",
+      "pos": [
+        25,
+        -0.5,
+        0.8
+      ],
+      "scale": [
+        56,
+        1,
+        9
+      ],
+      "material": "concrete_wet"
+    },
+    {
+      "kind": "box",
+      "pos": [
+        58.5,
+        -0.85,
+        0.5
+      ],
+      "scale": [
+        17,
+        1,
+        8
+      ],
+      "material": "mud_wet"
+    },
+    {
+      "kind": "prefab",
+      "prefab": "distantShore",
+      "pos": [
+        0,
+        0,
+        -46
+      ],
+      "layer": "bg",
+      "params": {
+        "x0": -60,
+        "x1": 110,
+        "lights": 4,
+        "seed": 9,
+        "town": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "rickshaw",
+      "pos": [
+        3.1,
+        0,
+        -0.9
+      ],
+      "rot": [
+        0,
+        20,
+        0
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "rickshaw",
+      "pos": [
+        -0.5,
+        0,
+        -2.0
+      ],
+      "rot": [
+        0,
+        -10,
+        0
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "rickshaw",
+      "pos": [
+        6.2,
+        0,
+        3.6
+      ],
+      "rot": [
+        0,
+        160,
+        0
+      ],
+      "layer": "fg"
+    },
+    {
+      "kind": "prefab",
+      "prefab": "noticeBoard",
+      "pos": [
+        7.6,
+        0,
+        -1.75
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "shopfront",
+      "pos": [
+        10.8,
+        0,
+        -3.4
+      ],
+      "textKey": "sign.L02.counter",
+      "params": {
+        "width": 5.0,
+        "height": 3.6,
+        "material": "plaster_ochre",
+        "shutter": "window",
+        "signBg": "#f4ecd2",
+        "signFg": "#14365a"
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "poster",
+      "pos": [
+        12.6,
+        1.62,
+        -1.82
+      ],
+      "params": {
+        "w": 0.5,
+        "h": 0.66,
+        "kind": "roster"
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "ledgerBook",
+      "pos": [
+        10.5,
+        1.02,
+        -1.75
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "shopfront",
+      "pos": [
+        19.4,
+        0,
+        -3.4
+      ],
+      "textKey": "sign.L02.tea",
+      "params": {
+        "width": 5.6,
+        "height": 3.4,
+        "material": "plaster_teal",
+        "shutter": "half",
+        "signBg": "#b3271d",
+        "signFg": "#fff3d6",
+        "awning": true
+      }
+    },
+    {
+      "kind": "box",
+      "pos": [
+        19,
+        0.45,
+        -1.4
+      ],
+      "scale": [
+        2.2,
+        0.08,
+        0.6
+      ],
+      "material": "wood_old"
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bench",
+      "pos": [
+        18.4,
+        0,
+        -0.6
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "shopfront",
+      "pos": [
+        28,
+        0,
+        -3.4
+      ],
+      "textKey": "sign.L02.radio",
+      "when": {
+        "none": [
+          "L02.ledger_solved"
+        ]
+      },
+      "params": {
+        "width": 5.8,
+        "height": 3.8,
+        "material": "plaster_white",
+        "shutter": "down",
+        "signBg": "#123c2c",
+        "signFg": "#e9f2d2"
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "shopfront",
+      "pos": [
+        28,
+        0,
+        -3.4
+      ],
+      "textKey": "sign.L02.radio",
+      "when": {
+        "all": [
+          "L02.ledger_solved"
+        ]
+      },
+      "params": {
+        "width": 5.8,
+        "height": 3.8,
+        "material": "plaster_white",
+        "shutter": "half",
+        "signBg": "#123c2c",
+        "signFg": "#e9f2d2",
+        "interior": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "radioSet",
+      "pos": [
+        28,
+        0.62,
+        -2.05
+      ],
+      "when": {
+        "all": [
+          "L02.ledger_solved"
+        ]
+      },
+      "params": {
+        "large": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "shelfRadios",
+      "pos": [
+        30.2,
+        0,
+        -2.3
+      ],
+      "when": {
+        "all": [
+          "L02.ledger_solved"
+        ]
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "shopfront",
+      "pos": [
+        36.5,
+        0,
+        -3.4
+      ],
+      "textKey": "sign.L02.traders",
+      "params": {
+        "width": 6.4,
+        "height": 4.2,
+        "material": "brick",
+        "shutter": "down",
+        "signBg": "#1b1b1b",
+        "signFg": "#e8c25a",
+        "padlock": true
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "shopfront",
+      "pos": [
+        42.6,
+        0,
+        -3.4
+      ],
+      "textKey": "sign.L02.pharmacy",
+      "params": {
+        "width": 4.6,
+        "height": 3.4,
+        "material": "plaster_ochre",
+        "shutter": "down",
+        "signBg": "#1f5f8b",
+        "signFg": "#ffffff"
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "shopfront",
+      "pos": [
+        47.4,
+        0,
+        -3.4
+      ],
+      "params": {
+        "width": 4.4,
+        "height": 3.2,
+        "material": "plaster_teal",
+        "shutter": "memorial"
+      }
+    },
+    {
+      "kind": "box",
+      "pos": [
+        51.5,
+        2.2,
+        -2.6
+      ],
+      "scale": [
+        1.2,
+        4.4,
+        3
+      ],
+      "material": "brick"
+    },
+    {
+      "kind": "box",
+      "pos": [
+        57.5,
+        1.6,
+        -1.6
+      ],
+      "scale": [
+        12,
+        3.6,
+        0.5
+      ],
+      "material": "brick"
+    },
+    {
+      "kind": "prefab",
+      "prefab": "looseBricks",
+      "pos": [
+        56.2,
+        0.35,
+        -1.32
+      ],
+      "when": {
+        "none": [
+          "L02.map_found"
+        ]
+      }
+    },
+    {
+      "kind": "box",
+      "pos": [
+        57.5,
+        1.5,
+        2.6
+      ],
+      "scale": [
+        12,
+        3.4,
+        0.4
+      ],
+      "material": "plaster_white",
+      "layer": "fg"
+    },
+    {
+      "kind": "prefab",
+      "prefab": "sacks",
+      "pos": [
+        15.5,
+        0,
+        -1.9
+      ],
+      "params": {
+        "count": 6
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "crate",
+      "pos": [
+        32.5,
+        0,
+        -1.9
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "crate",
+      "pos": [
+        33.2,
+        0,
+        -1.7
+      ],
+      "rot": [
+        0,
+        25,
+        0
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "barrel",
+      "pos": [
+        45,
+        0,
+        -1.9
+      ]
+    },
+    {
+      "kind": "prefab",
+      "prefab": "puddle",
+      "pos": [
+        8.5,
+        0.012,
+        1.2
+      ],
+      "params": {
+        "w": 3.6,
+        "d": 1.8
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "puddle",
+      "pos": [
+        23.5,
+        0.012,
+        0.6
+      ],
+      "params": {
+        "w": 4,
+        "d": 2
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "puddle",
+      "pos": [
+        39,
+        0.012,
+        1.4
+      ],
+      "params": {
+        "w": 3,
+        "d": 1.4
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "lampPost",
+      "pos": [
+        22.5,
+        0,
+        -1.6
+      ],
+      "params": {
+        "height": 3.8
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "wires",
+      "pos": [
+        0,
+        4.6,
+        -1.0
+      ],
+      "params": {
+        "x0": -2,
+        "x1": 50,
+        "sag": 0.7
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "fgPost",
+      "pos": [
+        14,
+        0,
+        4.2
+      ],
+      "layer": "fg",
+      "params": {
+        "height": 5.2
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "fgPost",
+      "pos": [
+        31,
+        0,
+        4.4
+      ],
+      "layer": "fg",
+      "params": {
+        "height": 5
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "fgPost",
+      "pos": [
+        45.5,
+        0,
+        4.0
+      ],
+      "layer": "fg",
+      "params": {
+        "height": 4.8
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "palm",
+      "pos": [
+        52,
+        0,
+        -6
+      ],
+      "layer": "bg",
+      "params": {
+        "height": 9
+      }
+    },
+    {
+      "kind": "prefab",
+      "prefab": "bicycle",
+      "pos": [
+        41,
+        0,
+        -1.7
+      ],
+      "rot": [
+        0,
+        10,
+        0
+      ]
+    }
+  ],
+  "lights": [
+    {
+      "id": "L02.tube",
+      "pos": [
+        10.8,
+        2.6,
+        -1.6
+      ],
+      "color": [
+        0.78,
+        0.92,
+        1
+      ],
+      "intensity": 2.2,
+      "range": 7,
+      "flicker": 0.45,
+      "shadows": true
+    },
+    {
+      "id": "L02.street",
+      "pos": [
+        22.5,
+        3.9,
+        -1.4
+      ],
+      "color": [
+        1,
+        0.66,
+        0.36
+      ],
+      "intensity": 2.2,
+      "range": 10
+    },
+    {
+      "id": "L02.radioglow",
+      "pos": [
+        28,
+        1.4,
+        -2.2
+      ],
+      "color": [
+        0.5,
+        1,
+        0.65
+      ],
+      "intensity": 1.4,
+      "range": 4.5,
+      "flicker": 0.35,
+      "when": {
+        "all": [
+          "L02.ledger_solved"
+        ]
+      }
+    },
+    {
+      "id": "L02.tea",
+      "pos": [
+        19.4,
+        2.4,
+        -1.8
+      ],
+      "color": [
+        1,
+        0.55,
+        0.25
+      ],
+      "intensity": 0.9,
+      "range": 4,
+      "flicker": 0.15
+    },
+    {
+      "id": "L02.alley",
+      "pos": [
+        55,
+        2.8,
+        -0.9
+      ],
+      "color": [
+        0.8,
+        0.85,
+        1
+      ],
+      "intensity": 0.8,
+      "range": 6,
+      "flicker": 0.6
+    }
+  ],
+  "interactables": [
+    {
+      "id": "L02.stub",
+      "pos": [
+        4.5,
+        0.15,
+        0.9
+      ],
+      "verbKey": "verb.pickup",
+      "objectKey": "obj.ticket_stub",
+      "sequence": "L02.stub",
+      "once": true
+    },
+    {
+      "id": "L02.notice",
+      "pos": [
+        7.6,
+        1.6,
+        -1.4
+      ],
+      "verbKey": "verb.read",
+      "objectKey": "obj.notice",
+      "sequence": "L02.notice_doc"
+    },
+    {
+      "id": "L02.ledger",
+      "pos": [
+        10.5,
+        1.1,
+        -1.45
+      ],
+      "verbKey": "verb.read",
+      "objectKey": "obj.ledger",
+      "sequence": "L02.ledger",
+      "when": {
+        "none": [
+          "L02.ledger_solved"
+        ]
+      }
+    },
+    {
+      "id": "L02.roster",
+      "pos": [
+        12.6,
+        1.6,
+        -1.5
+      ],
+      "verbKey": "verb.read",
+      "objectKey": "obj.roster",
+      "sequence": "L02.roster"
+    },
+    {
+      "id": "L02.tab",
+      "pos": [
+        19,
+        0.6,
+        -1.15
+      ],
+      "verbKey": "verb.read",
+      "objectKey": "obj.tea_tab",
+      "sequence": "L02.tab"
+    },
+    {
+      "id": "L02.rahman",
+      "pos": [
+        28,
+        1.2,
+        -1.6
+      ],
+      "verbKey": "verb.inspect",
+      "objectKey": "obj.radio_shop",
+      "sequence": "L02.rahman",
+      "when": {
+        "none": [
+          "L02.ledger_solved"
+        ]
+      }
+    },
+    {
+      "id": "L02.radio",
+      "pos": [
+        28,
+        1.0,
+        -1.6
+      ],
+      "verbKey": "verb.tune",
+      "objectKey": "obj.shop_radio",
+      "sequence": "L02.radio",
+      "when": {
+        "all": [
+          "L02.ledger_solved"
+        ],
+        "none": [
+          "L02.radio_solved"
+        ]
+      }
+    },
+    {
+      "id": "L02.tags",
+      "pos": [
+        30.2,
+        1.4,
+        -1.7
+      ],
+      "verbKey": "verb.read",
+      "objectKey": "obj.repair_tags",
+      "sequence": "L02.tags",
+      "when": {
+        "all": [
+          "L02.ledger_solved"
+        ]
+      }
+    },
+    {
+      "id": "L02.memorial",
+      "pos": [
+        47.4,
+        1.4,
+        -1.7
+      ],
+      "verbKey": "verb.photograph",
+      "objectKey": "obj.memorial",
+      "sequence": "L02.memorial",
+      "once": true,
+      "optional": true
+    },
+    {
+      "id": "L02.hiding",
+      "pos": [
+        56.2,
+        0.4,
+        -0.75
+      ],
+      "verbKey": "verb.search",
+      "objectKey": "obj.loose_bricks",
+      "sequence": "L02.hiding",
+      "when": {
+        "all": [
+          "L02.radio_solved"
+        ],
+        "none": [
+          "L02.map_found"
+        ]
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "id": "L02.t_notice",
+      "x0": 5.6,
+      "x1": 7.2,
+      "sequence": "L02.notice"
+    },
+    {
+      "id": "L02.t_exit",
+      "x0": 60.3,
+      "x1": 62,
+      "sequence": "L02.exit",
+      "when": {
+        "all": [
+          "L02.map_found"
+        ]
+      }
+    }
+  ],
+  "puzzleIds": [
+    "P2.ledger",
+    "P3.radio"
+  ],
+  "questNodes": [
+    "q.L02.ledger",
+    "q.L02.restore",
+    "q.L02.signal",
+    "q.L02.hiding",
+    "q.L02.leave"
+  ],
+  "enterSequence": "L02.enter",
+  "criticalBundle": [
+    "proc:materials",
+    "proc:rain",
+    "proc:audio"
+  ],
+  "memoryBudgetMb": 240
+}

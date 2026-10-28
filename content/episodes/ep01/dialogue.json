@@ -1,0 +1,1001 @@
+[
+  {
+    "id": "L01.caption.horn_far",
+    "speaker": "caption",
+    "textKey": "line.L01.caption.horn_far",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.asha.arrive",
+    "speaker": "asha",
+    "textKey": "line.L01.asha.arrive",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.asha.message",
+    "speaker": "asha",
+    "textKey": "line.L01.asha.message",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.asha.lantern",
+    "speaker": "asha",
+    "textKey": "line.L01.asha.lantern",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.caption.static",
+    "speaker": "caption",
+    "textKey": "line.L01.caption.static",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.rafi.fragment",
+    "speaker": "rafi",
+    "textKey": "line.L01.rafi.fragment",
+    "channel": "archive",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.asha.rafi",
+    "speaker": "asha",
+    "textKey": "line.L01.asha.rafi",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.asha.unplugged",
+    "speaker": "asha",
+    "textKey": "line.L01.asha.unplugged",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.mira.call1",
+    "speaker": "mira",
+    "textKey": "line.L01.mira.call1",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.mira.call2",
+    "speaker": "mira",
+    "textKey": "line.L01.mira.call2",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.asha.call3",
+    "speaker": "asha",
+    "textKey": "line.L01.asha.call3",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.mira.call4",
+    "speaker": "mira",
+    "textKey": "line.L01.mira.call4",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.asha.fuse",
+    "speaker": "asha",
+    "textKey": "line.L01.asha.fuse",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.asha.calendar",
+    "speaker": "asha",
+    "textKey": "line.L01.asha.calendar",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.karim.1",
+    "speaker": "karim",
+    "textKey": "line.L01.karim.1",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.karim.2",
+    "speaker": "karim",
+    "textKey": "line.L01.karim.2",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.asha.karim3",
+    "speaker": "asha",
+    "textKey": "line.L01.asha.karim3",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.karim.4",
+    "speaker": "karim",
+    "textKey": "line.L01.karim.4",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.asha.breaker",
+    "speaker": "asha",
+    "textKey": "line.L01.asha.breaker",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.asha.power",
+    "speaker": "asha",
+    "textKey": "line.L01.asha.power",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.caption.horn_near",
+    "speaker": "caption",
+    "textKey": "line.L01.caption.horn_near",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.asha.horn",
+    "speaker": "asha",
+    "textKey": "line.L01.asha.horn",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.mira.gate",
+    "speaker": "mira",
+    "textKey": "line.L01.mira.gate",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L01.asha.gate_locked",
+    "speaker": "asha",
+    "textKey": "line.L01.asha.gate_locked",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.enter",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.enter",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.caption.radio",
+    "speaker": "caption",
+    "textKey": "line.L02.caption.radio",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.notice",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.notice",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.mira.ledger",
+    "speaker": "mira",
+    "textKey": "line.L02.mira.ledger",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.ledger_found",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.ledger_found",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.stub",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.stub",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.tab",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.tab",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.roster",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.roster",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.ledger_solved",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.ledger_solved",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.caption.radio_burst",
+    "speaker": "caption",
+    "textKey": "line.L02.caption.radio_burst",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.rahman",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.rahman",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.shutter_up",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.shutter_up",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.tags",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.tags",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.rafi.frag_a",
+    "speaker": "rafi",
+    "textKey": "line.L02.rafi.frag_a",
+    "channel": "archive",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.rafi.frag_b",
+    "speaker": "rafi",
+    "textKey": "line.L02.rafi.frag_b",
+    "channel": "archive",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.rafi.frag_c",
+    "speaker": "rafi",
+    "textKey": "line.L02.rafi.frag_c",
+    "channel": "archive",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.our_place",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.our_place",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.mira.kanakhal",
+    "speaker": "mira",
+    "textKey": "line.L02.mira.kanakhal",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.map",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.map",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.map2",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.map2",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.memorial",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.memorial",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.asha.alley_blocked",
+    "speaker": "asha",
+    "textKey": "line.L02.asha.alley_blocked",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L02.mira.exit",
+    "speaker": "mira",
+    "textKey": "line.L02.mira.exit",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.asha.enter",
+    "speaker": "asha",
+    "textKey": "line.L03.asha.enter",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.asha.sign",
+    "speaker": "asha",
+    "textKey": "line.L03.asha.sign",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.asha.chalk",
+    "speaker": "asha",
+    "textKey": "line.L03.asha.chalk",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.mira.valves",
+    "speaker": "mira",
+    "textKey": "line.L03.mira.valves",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.asha.water_blocked",
+    "speaker": "asha",
+    "textKey": "line.L03.asha.water_blocked",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.caption.sluice",
+    "speaker": "caption",
+    "textKey": "line.L03.caption.sluice",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.asha.draining",
+    "speaker": "asha",
+    "textKey": "line.L03.asha.draining",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.asha.bridge",
+    "speaker": "asha",
+    "textKey": "line.L03.asha.bridge",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.caption.crack",
+    "speaker": "caption",
+    "textKey": "line.L03.caption.crack",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.caption.watcher",
+    "speaker": "caption",
+    "textKey": "line.L03.caption.watcher",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.asha.run",
+    "speaker": "asha",
+    "textKey": "line.L03.asha.run",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.asha.escaped",
+    "speaker": "asha",
+    "textKey": "line.L03.asha.escaped",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.mira.escaped1",
+    "speaker": "mira",
+    "textKey": "line.L03.mira.escaped1",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.asha.escaped2",
+    "speaker": "asha",
+    "textKey": "line.L03.asha.escaped2",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L03.mira.escaped3",
+    "speaker": "mira",
+    "textKey": "line.L03.mira.escaped3",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.asha.enter",
+    "speaker": "asha",
+    "textKey": "line.L04.asha.enter",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.caption.lights",
+    "speaker": "caption",
+    "textKey": "line.L04.caption.lights",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.asha.aleya",
+    "speaker": "asha",
+    "textKey": "line.L04.asha.aleya",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.mira.lookout",
+    "speaker": "mira",
+    "textKey": "line.L04.mira.lookout",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.caption.sweep",
+    "speaker": "caption",
+    "textKey": "line.L04.caption.sweep",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.asha.boat",
+    "speaker": "asha",
+    "textKey": "line.L04.asha.boat",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.asha.shrine",
+    "speaker": "asha",
+    "textKey": "line.L04.asha.shrine",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.asha.shrine2",
+    "speaker": "asha",
+    "textKey": "line.L04.asha.shrine2",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.asha.passed",
+    "speaker": "asha",
+    "textKey": "line.L04.asha.passed",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.asha.pattern",
+    "speaker": "asha",
+    "textKey": "line.L04.asha.pattern",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.caption.answer",
+    "speaker": "caption",
+    "textKey": "line.L04.caption.answer",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.asha.answer",
+    "speaker": "asha",
+    "textKey": "line.L04.asha.answer",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.asha.hull",
+    "speaker": "asha",
+    "textKey": "line.L04.asha.hull",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L04.mira.hull",
+    "speaker": "mira",
+    "textKey": "line.L04.mira.hull",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.enter",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.enter",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.board",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.board",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.jackets",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.jackets",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.log",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.log",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.notes",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.notes",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.gears",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.gears",
+    "channel": "thought",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.ready",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.ready",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.reconstructed",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.reconstructed",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.caption.lock",
+    "speaker": "caption",
+    "textKey": "line.L05.caption.lock",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.recorder",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.recorder",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.rafi.final1",
+    "speaker": "rafi",
+    "textKey": "line.L05.rafi.final1",
+    "channel": "archive",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.rafi.final2",
+    "speaker": "rafi",
+    "textKey": "line.L05.rafi.final2",
+    "channel": "archive",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.rafi.final3",
+    "speaker": "rafi",
+    "textKey": "line.L05.rafi.final3",
+    "channel": "archive",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.rafi.final4",
+    "speaker": "rafi",
+    "textKey": "line.L05.rafi.final4",
+    "channel": "archive",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.rafi.final5",
+    "speaker": "rafi",
+    "textKey": "line.L05.rafi.final5",
+    "channel": "archive",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.oh_rafi",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.oh_rafi",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.caption.steps",
+    "speaker": "caption",
+    "textKey": "line.L05.caption.steps",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.karim.1",
+    "speaker": "karim",
+    "textKey": "line.L05.karim.1",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.k1",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.k1",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.karim.2",
+    "speaker": "karim",
+    "textKey": "line.L05.karim.2",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.karim.3",
+    "speaker": "karim",
+    "textKey": "line.L05.karim.3",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.karim.4",
+    "speaker": "karim",
+    "textKey": "line.L05.karim.4",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.k2",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.k2",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.karim.5",
+    "speaker": "karim",
+    "textKey": "line.L05.karim.5",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.caption.lurch",
+    "speaker": "caption",
+    "textKey": "line.L05.caption.lurch",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.mira.shift",
+    "speaker": "mira",
+    "textKey": "line.L05.mira.shift",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.go",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.go",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.safe",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.safe",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.karim.safe",
+    "speaker": "karim",
+    "textKey": "line.L05.karim.safe",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.mira.decide",
+    "speaker": "mira",
+    "textKey": "line.L05.mira.decide",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.endA",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.endA",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.mira.endA",
+    "speaker": "mira",
+    "textKey": "line.L05.mira.endA",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.asha.endB",
+    "speaker": "asha",
+    "textKey": "line.L05.asha.endB",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.mira.endB",
+    "speaker": "mira",
+    "textKey": "line.L05.mira.endB",
+    "channel": "radio",
+    "audio": {
+      "bn": null
+    }
+  },
+  {
+    "id": "L05.caption.horn_end",
+    "speaker": "caption",
+    "textKey": "line.L05.caption.horn_end",
+    "channel": "direct",
+    "audio": {
+      "bn": null
+    }
+  }
+]

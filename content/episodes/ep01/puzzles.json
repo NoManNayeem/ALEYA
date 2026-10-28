@@ -1,0 +1,251 @@
+[
+  {
+    "id": "P1.breaker",
+    "sceneId": "aleya.ep01.L01",
+    "kind": "breaker",
+    "titleKey": "puzzle.P1.title",
+    "instructionsKey": "puzzle.P1.instructions",
+    "hintKeys": [
+      "puzzle.P1.hint1",
+      "puzzle.P1.hint2",
+      "puzzle.P1.hint3"
+    ],
+    "solvedFlag": "L01.power_on",
+    "config": {
+      "circuits": [
+        "jetty",
+        "shelter",
+        "gate"
+      ],
+      "terminals": [
+        "circle",
+        "triangle",
+        "square"
+      ],
+      "solution": {
+        "jetty": "triangle",
+        "shelter": "circle",
+        "gate": "square"
+      }
+    }
+  },
+  {
+    "id": "P2.ledger",
+    "sceneId": "aleya.ep01.L02",
+    "kind": "ledger",
+    "titleKey": "puzzle.P2.title",
+    "instructionsKey": "puzzle.P2.instructions",
+    "hintKeys": [
+      "puzzle.P2.hint1",
+      "puzzle.P2.hint2",
+      "puzzle.P2.hint3"
+    ],
+    "solvedFlag": "L02.ledger_solved",
+    "config": {
+      "entries": [
+        "t2050",
+        "t2105",
+        "t2120",
+        "t2140"
+      ],
+      "names": [
+        "rafi",
+        "malek",
+        "nurbanu",
+        "shirin"
+      ],
+      "solution": {
+        "t2050": "rafi",
+        "t2105": "malek",
+        "t2120": "nurbanu",
+        "t2140": "shirin"
+      }
+    }
+  },
+  {
+    "id": "P3.radio",
+    "sceneId": "aleya.ep01.L02",
+    "kind": "radio",
+    "titleKey": "puzzle.P3.title",
+    "instructionsKey": "puzzle.P3.instructions",
+    "hintKeys": [
+      "puzzle.P3.hint1",
+      "puzzle.P3.hint2",
+      "puzzle.P3.hint3"
+    ],
+    "solvedFlag": "L02.radio_solved",
+    "config": {
+      "bands": [
+        {
+          "id": "mw",
+          "min": 0,
+          "max": 20,
+          "target": 7,
+          "fragment": "frag.b"
+        },
+        {
+          "id": "sw1",
+          "min": 0,
+          "max": 20,
+          "target": 13,
+          "fragment": "frag.c"
+        },
+        {
+          "id": "sw2",
+          "min": 0,
+          "max": 20,
+          "target": 4,
+          "fragment": "frag.a"
+        }
+      ],
+      "order": [
+        "frag.a",
+        "frag.b",
+        "frag.c"
+      ],
+      "fragmentLines": {
+        "frag.a": "L02.rafi.frag_a",
+        "frag.b": "L02.rafi.frag_b",
+        "frag.c": "L02.rafi.frag_c"
+      }
+    }
+  },
+  {
+    "id": "P4.floodgate",
+    "sceneId": "aleya.ep01.L03",
+    "kind": "floodgate",
+    "titleKey": "puzzle.P4.title",
+    "instructionsKey": "puzzle.P4.instructions",
+    "hintKeys": [
+      "puzzle.P4.hint1",
+      "puzzle.P4.hint2",
+      "puzzle.P4.hint3"
+    ],
+    "solvedFlag": "L03.gate_solved",
+    "config": {
+      "valves": [
+        "A",
+        "B",
+        "C"
+      ],
+      "maxTurns": 3,
+      "matrix": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "base": [
+        0,
+        0,
+        0
+      ],
+      "target": [
+        3,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "P5.lantern",
+    "sceneId": "aleya.ep01.L04",
+    "kind": "lantern",
+    "titleKey": "puzzle.P5.title",
+    "instructionsKey": "puzzle.P5.instructions",
+    "hintKeys": [
+      "puzzle.P5.hint1",
+      "puzzle.P5.hint2",
+      "puzzle.P5.hint3"
+    ],
+    "solvedFlag": "L04.lights_solved",
+    "config": {
+      "positions": [
+        "left",
+        "center",
+        "right"
+      ],
+      "sequence": [
+        "center",
+        "left",
+        "right",
+        "center"
+      ]
+    }
+  },
+  {
+    "id": "R1.reconstruct",
+    "sceneId": "aleya.ep01.L05",
+    "kind": "reconstruct",
+    "titleKey": "puzzle.R1.title",
+    "instructionsKey": "puzzle.R1.instructions",
+    "hintKeys": [
+      "puzzle.R1.hint1",
+      "puzzle.R1.hint2",
+      "puzzle.R1.hint3"
+    ],
+    "solvedFlag": "L05.reconstructed",
+    "config": {
+      "order": [
+        "ev.cut",
+        "ev.divert",
+        "ev.lantern",
+        "ev.ground"
+      ]
+    }
+  },
+  {
+    "id": "P6.wheelhouse",
+    "sceneId": "aleya.ep01.L05",
+    "kind": "wheelhouse",
+    "titleKey": "puzzle.P6.title",
+    "instructionsKey": "puzzle.P6.instructions",
+    "hintKeys": [
+      "puzzle.P6.hint1",
+      "puzzle.P6.hint2",
+      "puzzle.P6.hint3"
+    ],
+    "solvedFlag": "L05.lock_solved",
+    "config": {
+      "positions": 6,
+      "start": [
+        3,
+        1,
+        4
+      ],
+      "target": [
+        0,
+        1,
+        2
+      ],
+      "gears": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    }
+  }
+]
